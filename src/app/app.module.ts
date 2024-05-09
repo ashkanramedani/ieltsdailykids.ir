@@ -7,6 +7,8 @@ import { NbThemeModule } from '@nebular/theme';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,8 +17,9 @@ import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme'
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NbThemeModule.forRoot({ name: 'aquamarine' }),
-    NbSidebarModule.forRoot(), NbLayoutModule, NbButtonModule
+    SharedModule,
+    NbThemeModule.forRoot({ name: 'angulo-web-theme' }),
+    NbSidebarModule.forRoot(), NbLayoutModule, NbButtonModule, NgbModule
   ],
   providers: [
     provideClientHydration()

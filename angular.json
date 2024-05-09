@@ -40,6 +40,9 @@
               "node_modules/@nebular/theme/styles/prebuilt/default.css",
               "src/styles.scss"
             ],
+            "allowedCommonJsDependencies": [
+              "eva-icons"
+            ],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
