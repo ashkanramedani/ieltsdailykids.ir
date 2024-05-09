@@ -3,11 +3,18 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-kids": {
+    "kids": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
         }
       },
       "root": "",
@@ -17,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/app-kids",
+            "outputPath": "dist/kids",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,6 +37,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@nebular/theme/styles/prebuilt/default.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -67,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app-kids:build:production"
+              "buildTarget": "kids:build:production"
             },
             "development": {
-              "buildTarget": "app-kids:build:development"
+              "buildTarget": "kids:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "app-kids:build"
+            "buildTarget": "kids:build"
           }
         },
         "test": {
@@ -102,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
