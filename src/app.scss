@@ -1,0 +1,276 @@
+// Font-Size Css Angular Dynamic:
+@font-face {
+  font-family: IRANSansDN;
+  src: url(assets/fonts/ttf/IRANSansDN.ttf) format("ttf");
+}
+@for $i from 10 through 60 {
+  .f-#{$i} {
+    font-size: #{$i}#{px};
+  }
+}
+
+// Border-Radius Css Angular Dynamic:
+@for $i from 0 through 30 {
+  .radius-#{$i} {
+    border-radius: #{$i}#{px};
+  }
+}
+
+// Width-% Css Angular Dynamic:
+@for $i from 0 through 1000 {
+  .w-#{$i} {
+    width: #{$i}#{"%"};
+  }
+}
+
+// Width-px Css Angular Dynamic:
+@for $i from 0 through 1000 {
+  .w-#{$i}px {
+    width: #{$i}#{px};
+  }
+}
+
+// Height-px Css Angular Dynamic:
+@for $i from 0 through 1000 {
+  .h-#{$i}px {
+    height: #{$i}#{px};
+  }
+}
+
+// Height-px Css Angular Dynamic:
+@for $i from -5 through 10 {
+  .z-index-#{$i} {
+    z-index: #{$i};
+  }
+}
+
+.row {
+  margin-right: unset;
+  margin-left: unset;
+
+  & .col-lg {
+    width: 33.33333333%;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr {
+  margin: 0;
+}
+body {
+  font-family: IRANSansDN !important;
+  background-color: #f9fafd;
+  background-image: linear-gradient(45deg, #f2f9fb, #f9f7f7, #f9f7f7);
+  overflow: hidden;
+}
+a,
+li,
+ul,
+div,
+span:not(.ag-icon, .ki-button__icon),
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button:not(.btn-close),
+section,
+label,
+nb-card-header,
+nb-card-body {
+  font-family: IRANSansDN !important;
+  text-align: end;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.h-96-5vh {
+  height: 96.5vh;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.min-h-523px {
+  min-height: 523px;
+}
+
+.min-h-544px {
+  min-height: 544px;
+}
+
+.min-w-unset {
+  min-width: unset;
+}
+
+.pb-4-5-rem {
+  padding-bottom: 4.5rem;
+}
+
+@media (min-width: 1000px) {
+  .modal-dialog {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
+
+.modal-header {
+  padding: 1.5rem 0;
+}
+
+.modal-body {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-footer {
+  padding: 1.5rem 0;
+}
+
+.modal {
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease-out;
+}
+
+/* Calendar one week Start */
+ngb-modal-window {
+  .dp-calendar-week {
+    display: none;
+  }
+
+  .dp-calendar-wrapper div:nth-child(2) {
+    display: flex;
+  }
+  /* Calendar one week END */
+
+  dp-calendar-nav .dp-nav-header {
+    left: unset;
+    top: 54%;
+    right: 25px;
+  }
+
+  dp-calendar-nav .dp-nav-btns-container {
+    gap: 25px;
+  }
+
+  .btn-check:checked + .btn,
+  :not(.btn-check) + .btn:active,
+  .btn:first-child:active,
+  .btn.active,
+  .btn.show {
+    color: var(--blue);
+    background-color: var(--blue-sky);
+    border: 1px solid var(--blue);
+  }
+}
+
+@media screen and (min-width: 10px) and (max-width: 1000px) {
+  .row {
+    & .col-lg {
+      width: 100%;
+    }
+  }
+
+  /* Mobile 3D Rotate Modal Start */
+  .modal.fade .modal-dialog {
+    transition: transform 0.5s ease-out;
+    transform: translateY(1000px);
+  }
+
+  .modal.show .modal-dialog {
+    transform: translateX(0);
+  }
+  /* Mobile 3D Rotate Modal END */
+
+  .modal {
+    overflow: hidden;
+
+    &.show .modal-dialog {
+      height: 100%;
+      align-items: end;
+      margin: 0;
+
+      & .modal-content {
+        border-radius: 20px 20px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 6000px) {
+  /* 3D Rotate Modal Start */
+  .modal.fade .modal-dialog {
+    transition: transform 0.5s ease-out;
+    transform: rotate3d(3, 6, 1, 70deg);
+  }
+
+  .modal.show .modal-dialog {
+    transform: none;
+  }
+  /* 3D Rotate Modal END */
+}
+
+@media screen and (min-width: 10px) and (max-width: 1300px) {
+  .w-20 {
+    width: 33%;
+  }
+
+  .ps-child-0 {
+    & div:nth-child(3n + 3) {
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+  .w-20 {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .ps-child-0 {
+    & div:nth-child(5n + 5) {
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .w-20 {
+    width: 16.6%;
+  }
+}
+
+@media screen and (min-width: 2561px) and (max-width: 5000px) {
+  .w-20 {
+    width: 14.2%;
+  }
+}
+/* END inputs Styles */

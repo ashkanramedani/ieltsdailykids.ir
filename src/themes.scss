@@ -1,13 +1,13 @@
-@forward '@nebular/theme/styles/theming';
-@use '@nebular/theme/styles/theming' as *;
-@use '@nebular/theme/styles/themes' as *;
+@forward "@nebular/theme/styles/theming";
+@use "@nebular/theme/styles/theming" as *;
+@use "@nebular/theme/styles/themes" as *;
 
 $nb-enable-css-custom-properties: true;
 
 $nb-themes: nb-register-theme(
   (
     // color-primary-500: red,
-    angulo-web: black,
+    angulo-web: black
   ),
   dark,
   dark
@@ -56,14 +56,13 @@ $nb-themes: nb-register-theme(
     color-basic-900: #006414,
     color-basic-1000: #003400,
     color-basic-1100: green,
-    
+
     color-primary-transparent-100: rgba(173, 255, 47, 0.08),
     color-primary-transparent-200: rgba(127, 255, 0.16),
     color-primary-transparent-300: rgba(124, 252, 0, 0.24),
     color-primary-transparent-400: rgba(0, 255, 0, 0.32),
     color-primary-transparent-500: rgba(50, 205, 50, 0.4),
     color-primary-transparent-600: rgba(152, 251, 152, 0.48),
-
     angulo-web: #006414,
   ),
   angulo-web-theme,
