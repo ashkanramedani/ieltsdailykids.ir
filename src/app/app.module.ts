@@ -24,7 +24,7 @@ import { IdpModule } from './idp/idp.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    NbThemeModule.forRoot({ name: 'angulo-web-theme' }),
+    NbThemeModule.forRoot({ name: 'default' }),
     NbSidebarModule.forRoot(),
     NbLayoutModule,
     NbButtonModule,

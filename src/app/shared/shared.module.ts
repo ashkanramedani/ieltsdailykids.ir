@@ -28,13 +28,14 @@ import { NgxMaskModule } from 'ngx-mask';
 import * as kiComponent from './ki-components';
 
 import { NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
-import { CustomHeaderComponent } from './components';
+import { CustomHeaderComponent, PinCodeComponent } from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
 // import * as _templates from './components/templates';
 // import * as _organisms from './components/organisms';
 
 const component = [
   CustomHeaderComponent,
+  PinCodeComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,

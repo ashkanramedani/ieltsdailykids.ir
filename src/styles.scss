@@ -15,3 +15,12 @@
 }
 
 @import "app.scss"; /* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-btn: #019da4;
+  --wheat:#fff
+}
+
+.bg-btn{
+  background-color: var(--bg-btn);
+  color: var(--wheat);
+}

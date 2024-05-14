@@ -1,8 +1,11 @@
 @import "variable";
+@import "../../../../themes.scss";
 
 .modal-header {
   padding: $side-distance !important;
-  background: none !important;
+  background: nb-theme(color-100);
+  border-radius: 50px 50px 0 0;
+  border: unset;
 }
 
 .modal-title {
@@ -15,17 +18,21 @@
 }
 
 .modal-body {
-  padding: $side-distance !important;
-  background: none !important;
+  background: nb-theme(color-100);
+  height: 36vh;
+  border-radius: 50px;
 }
 
 .modal-footer {
-  background: none !important;
+  background: nb-theme(color-100);
   padding: $side-distance !important;
   padding-top: 0 !important;
   display: flex;
   align-items: center;
+  border: unset;
   gap: $spacing-x2;
+  border-radius: 0 0 50px 50px;
+
   & > * {
     margin: 0 !important;
   }

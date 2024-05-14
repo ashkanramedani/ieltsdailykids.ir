@@ -1,0 +1,15 @@
+<ki-modal
+  [showCancelButton]="false"
+  (onCloseCallback)="cancelHandler()"
+  [showPrimaryButton]="false"
+  [primaryButtonFor]="submitButtonId"
+  [hideHeaderActions]="true"
+  [showPrimaryButtonLoading]="isLoading"
+>
+  <ki-spinner
+    [matchParent]="true"
+    color="dark"
+    *ngIf="isLoading; else content"
+  ></ki-spinner>
+  <ng-template #content> </ng-template>
+</ki-modal>

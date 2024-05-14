@@ -9,13 +9,15 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
-
+import * as _template from './components/templates';
 @NgModule({
   declarations: [
     SignupComponent,
     SigningComponent,
     LoginComponent,
     LayoutComponent,
+    _template.LoginFormModalComponent,
+    _template.SignupFormModalComponent,
   ],
   imports: [CommonModule, SharedModule, FormsModule, RouterModule],
   exports: [SignupComponent, SigningComponent, LoginComponent],

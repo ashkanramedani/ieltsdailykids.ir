@@ -1,6 +1,6 @@
-@import 'variable';
+@import "variable";
 
-$name: 'form-group';
+$name: "form-group";
 
 .#{$name} {
   margin-bottom: $spacing-x4;
@@ -10,13 +10,10 @@ $name: 'form-group';
   }
 
   &__required-sign {
-    position: absolute;
-    top: 0;
-    inset-inline-start: 100%;
-    margin-inline-start: $spacing-x1;
-    color: $error;
+    color: #eb4949;
     font-size: 13px;
-    line-height: 1;
+    width: 6px;
+    height: 6px;
   }
 
   &--align-center {

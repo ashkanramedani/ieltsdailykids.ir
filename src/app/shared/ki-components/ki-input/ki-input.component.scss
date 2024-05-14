@@ -1,5 +1,5 @@
 @import "variable";
-
+@import "../../../../themes.scss";
 $name: "textbox";
 $textbox-side-distance: $spacing-x3;
 $large-icon-size: 20px;
@@ -9,8 +9,8 @@ $small-icon-size: 12px;
   display: flex;
   position: relative;
   &__element {
-    background-color: $form-element-background-color;
-    color: $form-element-color;
+    background-color: nb-theme(color-basic-100);
+    color: nb-theme(color-basic-700);
     border: 1px solid $form-element-border-color;
     box-shadow: $form-element-shadow;
     font-size: $form-element-font-size--normal;
@@ -27,7 +27,7 @@ $small-icon-size: 12px;
 
     &:focus {
       background-color: $form-element-background-color--focus;
-      color: $form-element-color--focus;
+      color:nb-theme(color-basic-700);;
       border-color: $form-element-border-color--focus;
       box-shadow: $form-element-shadow--focus;
     }

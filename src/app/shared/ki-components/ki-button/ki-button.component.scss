@@ -1,5 +1,5 @@
 @import "variable";
-
+@import "../../../../themes.scss";
 $name: "ki-button";
 $large-icon-size: 20px;
 $normal-icon-size: 16px;
@@ -11,7 +11,15 @@ $small-icon-size: 12px;
   gap: $spacing-x2;
   padding: $spacing-x1 $spacing-x4;
   min-height: $form-element-size--normal;
-  border-radius: $form-element-border-radius--normal;
+  border-radius: nb-theme(border-main-radius) !important;
+  background-color: nb-theme(color-main-100);
+  background: rgb(5, 139, 145) !important;
+  background: linear-gradient(
+    99deg,
+    rgba(5, 139, 145, 1) 30%,
+    rgba(1, 157, 164, 1) 49%,
+    rgba(3, 131, 136, 1) 100%
+  ) !important;
   font-size: $form-element-font-size--normal;
   font-weight: 600;
 
@@ -80,7 +88,7 @@ $small-icon-size: 12px;
     }
 
     &.#{$name}--primary {
-      background-color: $primary !important;
+      background-color: nb-theme(color-main-100);
       color: $on-primary !important;
       &:hover {
         background-color: darken($color: $primary, $amount: 7) !important;

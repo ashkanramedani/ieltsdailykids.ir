@@ -1,15 +1,6 @@
-<section>
+
   <div class="modal-header" *ngIf="!hideCloseIcon && !!title">
-    <h4 *ngIf="!!title" class="modal-title" id="modal-basic-title">
-      {{ title }}
-    </h4>
-    <button
-      *ngIf="!hideCloseIcon"
-      type="button"
-      class="btn-close"
-      aria-label="Close"
-      (click)="closeModal()"
-    ></button>
+   
   </div>
   <div class="modal-body"><ng-content></ng-content></div>
   <div class="modal-footer" *ngIf="showPrimaryButton || showCancelButton">
@@ -36,4 +27,4 @@
       {{ primaryButtonText ? primaryButtonText : "ذخیره" }}
     </ki-button>
   </div>
-</section>
+

@@ -1,0 +1,107 @@
+<form
+  #companyForm="ngForm"
+  (ngSubmit)="!companyForm.invalid && submitHandler(companyForm)"
+>
+  <div class="d-flex justify-content-around">
+    <div class="holder-img position-relative">
+      <img class="img-spatial" src="/assets/image/spatial.png" alt="spatial" />
+    </div>
+    <ng-container [ngSwitch]="stepForm">
+      <ng-container *ngSwitchCase="signuEnum.EnterMobile">
+        <div class="d-flex flex-column align-items-start mt-5 w-100">
+          <ki-form-group
+            class="w-70"
+            [label]="'نام و نام خانوادگی '"
+            [showRequireSign]="true"
+            [errorMessage]="name.errors?.required ? 'فیلد اجباری' : ''"
+            [hideError]="
+              !(
+                (name.touched || companyForm.submitted) &&
+                name.errors?.required
+              )
+            "
+          >
+            <ki-input
+              name="name"
+              [fullWidth]="true"
+              [(ngModel)]="model.name"
+              #name="ngModel"
+              required
+            ></ki-input>
+          </ki-form-group>
+          <ki-form-group
+            class="w-70"
+            [label]="'شماره همراه '"
+            [showRequireSign]="true"
+            [errorMessage]="
+              mobile.errors?.isInvalid ? 'فرمت اشتباه' : 'فیلد اجباری'
+            "
+            [hideError]="
+              !(
+                ((mobile.touched || companyForm.submitted) &&
+                  mobile.errors?.required) ||
+                mobile.errors?.isInvalid
+              )
+            "
+          >
+            <ki-input
+              name="mobile"
+              [type]="'phone'"
+              [fullWidth]="true"
+              [(ngModel)]="model.mobile"
+              #mobile="ngModel"
+              required
+            ></ki-input>
+          </ki-form-group>
+          <ki-button
+            class="w-70"
+            [title]="companyForm.invalid ? 'ثبت نام' : 'ارسال کد'"
+            [btnType]="'primary'"
+            (click)="runForm_otp()"
+          >
+          </ki-button>
+        </div>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="signuEnum.EnterCode">
+        <!-----------Enter Code-->
+        <div class="d-flex flex-column align-items-start mt-5 w-100">
+          <div class="d-flex flex-column">
+            <strong class="mt-3 mb-3">وارد کردن کد ارسالی</strong>
+            <app-pin-code></app-pin-code>
+
+            <div
+              *ngIf="otpTimer; else resendOtp_tpl"
+              class="f-12 d-flex mt-3 justify-content-between"
+            >
+              <strong>ارسال دوباره کد</strong>
+              {{ otpTimerTextAction$ | async }}
+            </div>
+            <ng-template #resendOtp_tpl>
+              <div class="f-12 blue pointer">ارسال مجدد کد</div>
+            </ng-template>
+          </div>
+          <ki-button
+            class="w-70"
+            [title]="'ارسال'"
+            [btnType]="'primary'"
+            (click)="sendCode()"
+          >
+          </ki-button>
+        </div>
+        <!--------------end Code-->
+      </ng-container>
+    </ng-container>
+    <img
+      [ngClass]="{
+        img_sat: final,
+        img_start: isStart,
+        img_saturn: !final
+      }"
+      src="../../../../assets/image/saturn.png"
+      alt="saturn"
+    />
+  </div>
+
+  <input type="submit" [hidden]="true" [attr.id]="submitButtonId" />
+</form>

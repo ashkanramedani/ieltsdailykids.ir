@@ -1,0 +1,132 @@
+form {
+  perspective: 400px;
+  position: relative;
+}
+
+.img-spatial {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: -32px;
+  right: -4rem;
+}
+.holder-img {
+  width: 454px;
+}
+.img_saturn {
+  position: absolute;
+  height: 60.61%;
+  width: 38.8%;
+  top: -6rem;
+  right: 74.2%;
+  bottom: 51.39%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  transform-style: preserve-3d;
+  animation-name: rotate-center;
+  animation-duration: 3.2s;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.img_sat {
+  position: absolute;
+  height: 60.61%;
+  width: 38.8%;
+  top: -6rem;
+  right: 74.2%;
+  bottom: 51.39%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  transform-style: preserve-3d;
+  animation-name: roll-out-blurred-top;
+  animation-duration: 3.2s;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.img_start {
+  position: absolute;
+  height: 60.61%;
+  width: 38.8%;
+  top: -6rem;
+  right: 74.2%;
+  bottom: 51.39%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  transform-style: preserve-3d;
+  animation-name: slide-in-elliptic-right-fwd;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+//start
+@keyframes slide-in-elliptic-right-fwd {
+  0% {
+    transform: translateX(800px) rotateY(-30deg) scale(0);
+    transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: -1800px 50%;
+    opacity: 1;
+  }
+}
+
+//َAnimation loading
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    transform-origin: top;
+    // transform: rotate(0);
+    // transform-origin: 0% 0%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: top;
+    // transform: rotate(-360deg);
+    // transform-origin: 0% 0%;
+  }
+}
+
+//final
+@keyframes roll-out-blurred-top {
+  // 0% {
+  //   transform: translateY(0) rotate(0deg);
+  //   filter: blur(0);
+  //   opacity: 1;
+  // }
+  // 100% {
+  //   transform: translateY(-800px) rotate(-720deg);
+  //   filter: blur(50px);
+  //   opacity: 0;
+  // }//1
+
+  0% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 600px 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px) rotateY(20deg) scale(6);
+    transform-origin: -100% 50%;
+    opacity: 0;
+  }
+}

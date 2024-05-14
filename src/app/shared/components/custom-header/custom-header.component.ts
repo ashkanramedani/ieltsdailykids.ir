@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 // import { NbAuthJWTToken, NbAuthService } from '@nebular/auth';
 // import { NbAccessChecker } from '@nebular/security';
 import { NbThemeService } from '@nebular/theme';
+import { OpenPagesIdpService } from '../../../idp/services/open-page-idp.service';
 // import { NbIsGrantedDirective } from '@nebular/security';
 
 @Component({
@@ -12,32 +13,27 @@ import { NbThemeService } from '@nebular/theme';
   styleUrls: ['./custom-header.component.scss'],
 })
 export class CustomHeaderComponent implements OnInit {
-
   user = {
-    name: 'Prueba nebular'
+    name: 'Prueba nebular',
   };
 
-  currentTheme = new FormControl('')
+  currentTheme = new FormControl('');
 
-  themes = [
-    'dark',
-    'default',
-    'cosmic',
-    'corporate',
-    'angulo-web-theme'
-  ]
-//   private authService: NbAuthService, 
-// public accessChecker: NbAccessChecker,
-  constructor(private router:Router, private themeService: NbThemeService) {
+  themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
+  //   private authService: NbAuthService,
+  // public accessChecker: NbAccessChecker,
+  constructor(
+    private router: Router,
+    private themeService: NbThemeService,
+    private _openPagesIdpService: OpenPagesIdpService
+  ) {
     this.currentTheme.setValue(this.themeService.currentTheme);
   }
 
   ngOnInit(): void {
-
-    this.themeService.onThemeChange().subscribe(res => {
+    this.themeService.onThemeChange().subscribe((res) => {
       console.log('el tema ha cambiado', res);
-      
-    })
+    });
   }
 
   logout(): void {
@@ -48,5 +44,8 @@ export class CustomHeaderComponent implements OnInit {
 
   changeTheme(theme: string): void {
     this.themeService.changeTheme(theme);
+  }
+  show() {
+    this._openPagesIdpService.showSignupPage();
   }
 }

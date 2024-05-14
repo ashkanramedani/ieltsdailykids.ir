@@ -5,6 +5,7 @@
   [class.form-group--no-bottom-distance]="noBottomDistance"
 >
   <div
+    class="align-items-end d-flex"
     [class]="!!labelColNumber ? 'col-sm-' + labelColNumber : ''"
     *ngIf="!removeLabel"
   >
@@ -13,11 +14,9 @@
       [class.form-group__label--is-horizontal]="labelColNumber"
       [class.invisible]="!label"
       [attr.for]="for"
-      >{{ label || "Default"
-      }}<sup class="form-group__required-sign" *ngIf="showRequireSign"
-        >*</sup
-      ></label
+      >{{ label || "Default" }}</label
     >
+    <sup class="form-group__required-sign" *ngIf="showRequireSign">*</sup>
   </div>
 
   <div
