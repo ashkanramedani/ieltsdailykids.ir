@@ -1,0 +1,74 @@
+.podcast-header {
+  width: 100%;
+  position: relative;
+  height: 31.25rem;
+  background-color: #3ec664;
+  text-align: right;
+}
+h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #19313a;
+  line-height: 41px;
+  width: 42rem;
+}
+.library {
+  text-align: right;
+  font-size: 3.563rem;
+  color: #fff;
+  line-height: 86px;
+}
+.union-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.objects-icon1 {
+  position: absolute;
+  width: 4rem;
+  right: 24rem;
+  object-fit: contain;
+}
+.objects-icon3,
+.podcast-header-item {
+  position: absolute;
+  width: 7rem;
+  object-fit: contain;
+  left: 15rem;
+  top: 11rem;
+}
+.podcast-header-item {
+  top: 2rem;
+}
+.objects-icon2 {
+  position: absolute;
+  width: 3rem;
+  right: 25rem;
+  top: 8rem;
+  object-fit: contain;
+}
+.layer-1-icon {
+  object-fit: contain;
+  width: 16rem;
+  position: absolute;
+  right: 10rem;
+}
+.book-reader-2 {
+  height: 80%;
+  top: 9.8%;
+  right: 35.84%;
+  object-fit: contain;
+  position: absolute;
+  width: 24rem;
+  z-index: 144;
+}
+.vector-icon {
+  position: absolute;
+  height: 35%;
+  top: 48.4%;
+  left: 18.21%;
+  max-height: 100%;
+  object-fit: cover;
+}

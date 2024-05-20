@@ -17,8 +17,9 @@ import {
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
 import { IdpModule } from './idp/idp.module';
+import { LibraryComponent } from './pages/library/library.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LibraryComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
