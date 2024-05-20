@@ -1,4 +1,5 @@
 @import "variable";
+@import "../../../../themes.scss";
 
 $name: "ki-tab";
 $tab-avtive-border-width: 3px;
@@ -58,6 +59,7 @@ $tab-avtive-border-width: 3px;
     cursor: pointer;
     font-weight: bold;
     font-size: 15px;
+    font-family: nb-theme(font-family-primary);
     opacity: 0;
     visibility: hidden;
     &:hover {
@@ -152,7 +154,7 @@ $tab-avtive-border-width: 3px;
   &__button-text {
     font-size: 15px;
     font-weight: 500;
-
+    font-family: nb-theme(font-family-primary);
     &--ellipsis {
       flex: 1;
       min-width: 0;
@@ -187,6 +189,7 @@ $tab-avtive-border-width: 3px;
     padding: $spacing-x2 $spacing-x4;
     color: black;
     font-size: 16px;
+    font-family: nb-theme(font-family-primary);
     background-color: $primary-light;
   }
 

@@ -1,9 +1,12 @@
-@import './../../../../assets/base/variable';
+@import "./../../../../assets/base/variable";
+@import "../../../../themes.scss";
 
 $font-size: 13px;
-$name: 'validation';
+$name: "validation";
 .#{$name} {
   font-size: $font-size;
+  font-family: nb-theme(font-family-primary);
+
   line-height: 2;
   max-height: 3 * $font-size;
   transition: 0.3s all;

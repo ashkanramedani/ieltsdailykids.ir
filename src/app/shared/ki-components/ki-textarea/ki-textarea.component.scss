@@ -1,6 +1,7 @@
-@import 'variable';
+@import "variable";
+@import "../../../../themes.scss";
 
-$name: 'textarea';
+$name: "textarea";
 .#{$name} {
   display: flex;
   &__element {
@@ -9,6 +10,7 @@ $name: 'textarea';
     border: 1px solid $form-element-border-color;
     box-shadow: $form-element-shadow;
     font-size: $form-element-font-size--normal;
+    font-family: nb-theme(font-family-primary);
     height: $form-element-size--normal * 3;
     line-height: 1.5;
     border-radius: $form-element-border-radius--normal;
@@ -45,6 +47,8 @@ $name: 'textarea';
 
     &--large {
       font-size: $form-element-font-size--large;
+      font-family: nb-theme(font-family-primary);
+
       height: $form-element-size--large * 3;
       border-radius: $form-element-border-radius--large;
       padding: $spacing-x3;
@@ -53,6 +57,8 @@ $name: 'textarea';
 
     &--small {
       font-size: $form-element-font-size--small;
+      font-family: nb-theme(font-family-primary);
+
       height: $form-element-size--small * 3;
       border-radius: $form-element-border-radius--small;
       padding: $spacing-x1 $spacing-x3;

@@ -1,4 +1,5 @@
 @import "variable";
+@import "../../../../themes.scss";
 
 $name: "form-group";
 
@@ -18,9 +19,10 @@ $name: "form-group";
 
   &--align-center {
     align-items: center;
-
+    font-family: nb-theme(font-family-primary);
     .#{$name}__label {
       margin: 0 !important;
+      font-family: nb-theme(font-family-primary);
     }
   }
 

@@ -3,7 +3,7 @@ import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 // import { NbAuthJWTToken, NbAuthService } from '@nebular/auth';
 // import { NbAccessChecker } from '@nebular/security';
-import { NbThemeService } from '@nebular/theme';
+import { NbMenuItem, NbThemeService } from '@nebular/theme';
 import { OpenPagesIdpService } from '../../../idp/services/open-page-idp.service';
 // import { NbIsGrantedDirective } from '@nebular/security';
 
@@ -19,6 +19,7 @@ export class CustomHeaderComponent implements OnInit {
 
   currentTheme = new FormControl('');
 
+  items = [{ title: 'Profile' }, { title: 'Logout' }];
   themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
   //   private authService: NbAuthService,
   // public accessChecker: NbAccessChecker,

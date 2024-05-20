@@ -22,7 +22,7 @@ $small-icon-size: 12px;
   ) !important;
   font-size: $form-element-font-size--normal;
   font-weight: 600;
-
+  font-family: nb-theme(font-family-primary);
   width: 100%;
   outline: none;
   border: none;

@@ -20,14 +20,14 @@ $small-icon-size: 12px;
     width: 100%;
     outline: none;
     transition: 0.3s all;
-
+    font-family: nb-theme(font-family-primary);
     &::placeholder {
       color: $content-tertiary !important;
     }
 
     &:focus {
       background-color: $form-element-background-color--focus;
-      color:nb-theme(color-basic-700);;
+      color: nb-theme(color-basic-700);
       border-color: $form-element-border-color--focus;
       box-shadow: $form-element-shadow--focus;
     }

@@ -1,6 +1,7 @@
-@import 'variable';
+@import "variable";
+@import "../../../../themes.scss";
 
-$name: 'select-control';
+$name: "select-control";
 .#{$name} {
   display: block;
   .ng-select {
@@ -10,6 +11,7 @@ $name: 'select-control';
       border: 1px solid $form-element-border-color;
       box-shadow: $form-element-shadow;
       font-size: $form-element-font-size--normal;
+      font-family: nb-theme(font-family-secondary);
       min-height: $form-element-size--normal;
       border-radius: $form-element-border-radius--normal;
       padding: $spacing-x2 $spacing-x3;
@@ -37,13 +39,14 @@ $name: 'select-control';
     .ng-input {
       padding-left: 0 !important;
       padding-bottom: 0 !important;
+      font-family: nb-theme(font-family-secondary);
     }
 
     .ng-arrow-wrapper {
       width: auto;
       transform: rotate(0);
       padding-right: 0;
-      font-family: 'Font Awesome 5 Free';
+      font-family: "Font Awesome 5 Free";
       -webkit-font-smoothing: antialiased;
       display: inline-block;
       font-style: normal;
@@ -59,7 +62,7 @@ $name: 'select-control';
       }
 
       &:before {
-        content: '\f107';
+        content: "\f107";
         display: inline-block;
         text-rendering: auto;
         color: $content-secondary;
@@ -76,6 +79,7 @@ $name: 'select-control';
         top: 50% !important;
         transform: translateY(-50%) !important;
         left: $spacing-x3 !important;
+        font-family: nb-theme(font-family-secondary);
       }
       .ng-select-container {
         height: $form-element-size--normal;

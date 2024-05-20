@@ -1,4 +1,5 @@
-@import 'variable';
+@import "variable";
+@import "../../../../themes.scss";
 
 .confirm-content {
   padding: $side-distance;
@@ -8,11 +9,13 @@
   &__title {
     font-size: 14px;
     font-weight: bold;
+    font-family: nb-theme(font-family-secondary);
   }
 
   &__content {
     margin-top: $spacing-x2;
     font-size: 13px;
+    font-family: nb-theme(font-family-primary);
     text-align: justify;
     white-space: pre-line;
     &:first-child {
@@ -26,5 +29,6 @@
     align-items: center;
     gap: $spacing-x2;
     justify-content: flex-end;
+    font-family: nb-theme(font-family-primary);
   }
 }

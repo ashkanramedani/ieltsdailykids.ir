@@ -1,6 +1,25 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
+}
+.lbl_menu {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #384045;
+}
+.btn_login {
+  border: 0;
+  padding: 0.625rem 0.5rem;
+  background-color: transparent;
+  border-left: 1px solid #d0d0d0;
+  justify-content: center;
+  gap: 0.562rem;
+  span {
+    position: relative;
+    font-size: 0.813rem;
+    color: #019da4;
+    text-align: center;
+  }
 }

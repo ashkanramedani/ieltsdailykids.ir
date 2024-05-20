@@ -1,4 +1,4 @@
-@import 'variable.scss';
+@import "variable.scss";
 
 .tile {
   display: flex;
@@ -38,6 +38,8 @@
 
     &-text {
       font-weight: bold;
+      font-family: nb-theme(font-family-secondary);
+
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

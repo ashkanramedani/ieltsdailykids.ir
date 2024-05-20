@@ -6,6 +6,7 @@
   background: nb-theme(color-100);
   border-radius: 50px 50px 0 0;
   border: unset;
+  font-family: nb-theme(font-family-secondary);
 }
 
 .modal-title {
@@ -15,12 +16,14 @@
   color: black !important;
   margin: 0 !important;
   font-size: 26px !important;
+  font-family: nb-theme(font-family-secondary);
 }
 
 .modal-body {
   background: nb-theme(color-100);
   height: 36vh;
   border-radius: 50px;
+  font-family: nb-theme(font-family-secondary);
 }
 
 .modal-footer {
@@ -50,6 +53,7 @@
     gap: $spacing-x2;
     padding: $spacing-x2;
     border-radius: $radius-x1;
+    font-family: nb-theme(font-family-secondary);
     text-decoration: none;
     transition: 0.3s all;
     background-color: transparent;

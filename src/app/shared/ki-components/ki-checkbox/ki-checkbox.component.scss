@@ -1,4 +1,5 @@
-@import 'variable';
+@import "variable";
+@import "../../../../themes.scss";
 
 $large-size: 36px;
 $normal-size: 26px;
@@ -8,7 +9,7 @@ $small-size: 16px;
   display: inline-flex;
 }
 
-$name: 'ki-checkbox';
+$name: "ki-checkbox";
 .#{$name} {
   position: relative;
   display: inline-flex;
@@ -25,7 +26,7 @@ $name: 'ki-checkbox';
 
     transition: 0.3s all;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       left: 50%;
@@ -42,7 +43,7 @@ $name: 'ki-checkbox';
     opacity: 0;
     width: 1px;
     height: 1px;
-    &[type='checkbox'] {
+    &[type="checkbox"] {
       & ~ .#{$name}__icon {
         &::after {
           width: 60%;
@@ -82,7 +83,7 @@ $name: 'ki-checkbox';
       }
     }
 
-    &[type='radio'] {
+    &[type="radio"] {
       & ~ .#{$name}__icon {
         border-radius: 50%;
         &::after {
@@ -142,12 +143,13 @@ $name: 'ki-checkbox';
     margin-inline-start: $spacing-x2;
     font-size: $form-element-font-size--normal;
     color: $form-element-color;
+    font-family: nb-theme(font-family-primary);
   }
 
   &--large {
     .#{$name} {
       &__element {
-        &[type='checkbox'] {
+        &[type="checkbox"] {
           & ~ .#{$name}__icon {
             width: $large-size;
             height: $large-size;
@@ -159,7 +161,7 @@ $name: 'ki-checkbox';
           }
         }
 
-        &[type='radio'] {
+        &[type="radio"] {
           & ~ .#{$name}__icon {
             width: $large-size;
             height: $large-size;
@@ -176,7 +178,7 @@ $name: 'ki-checkbox';
   &--small {
     .#{$name} {
       &__element {
-        &[type='checkbox'] {
+        &[type="checkbox"] {
           & ~ .#{$name}__icon {
             width: $small-size;
             height: $small-size;
@@ -188,7 +190,7 @@ $name: 'ki-checkbox';
           }
         }
 
-        &[type='radio'] {
+        &[type="radio"] {
           & ~ .#{$name}__icon {
             width: $small-size;
             height: $small-size;
