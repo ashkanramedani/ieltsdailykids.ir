@@ -1,56 +1,58 @@
-<div class="podcast-header">
-  <div class="row h-100">
-    <div class="col-6">
-      <div class="m-5 p-5 wrapper">
-        <h4 class="library mb-2">کتابخانه</h4>
-        <h6>
-          انتخاب کتاب زبان انگلیسی مناسب با روش آموزشی درست، تأثیر بسیار
-          چشم‌گیری در رشد و یادگیری زبان‌آموزان خردسال دارد. اینجا کلی کتاب
-          رایگان برای یادگیری بهتر شما عزیزان داریم.
-        </h6>
+<header>
+  <div class="podcast-header">
+    <div class="row h-100">
+      <div class="col-6">
+        <div class="m-5 p-5 wrapper">
+          <h2 class="library mb-2">کتابخانه</h2>
+          <p>
+            انتخاب کتاب زبان انگلیسی مناسب با روش آموزشی درست، تأثیر بسیار
+            چشم‌گیری در رشد و یادگیری زبان‌آموزان خردسال دارد. اینجا کلی کتاب
+            رایگان برای یادگیری بهتر شما عزیزان داریم.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="col-6 position-relative p-5">
-      <div class="right">
-        <img
-          class="objects-icon1"
-          alt="mini-cloud"
-          src="../../../assets/library/objects@2x.png"
-        />
-        <img
-          class="layer-1-icon"
-          alt="book"
-          src="../../../assets/library/layer-1@2x.png"
-        />
-        <img
-          class="objects-icon2"
-          alt="mini-cloud-2"
-          src="../../../assets/library/OBJECTS.svg"
-        />
-      </div>
+      <div class="col-6 position-relative p-5">
+        <div class="right">
+          <img
+            class="objects-icon1"
+            alt="mini-cloud"
+            src="../../../assets/library/objects@2x.png"
+          />
+          <img
+            class="layer-1-icon"
+            alt="book"
+            src="../../../assets/library/layer-1@2x.png"
+          />
+          <img
+            class="objects-icon2"
+            alt="mini-cloud-2"
+            src="../../../assets/library/OBJECTS.svg"
+          />
+        </div>
 
-      <img
-        class="book-reader-2"
-        alt=""
-        src="../../../assets/library/book-reader--2@2x.png"
-      />
-      <div class="left">
         <img
-          class="objects-icon3"
-          alt="mini-cloud"
-          src="../../../assets/library/objects@2x.png"
-        />
-        <img
-          class="podcast-header-item"
+          class="book-reader-2"
           alt=""
-          src="../../../assets/library/group-48095650@2x.png"
+          src="../../../assets/library/book-reader--2@2x.png"
+        />
+        <div class="left">
+          <img
+            class="objects-icon3"
+            alt="mini-cloud"
+            src="../../../assets/library/objects@2x.png"
+          />
+          <img
+            class="podcast-header-item"
+            alt=""
+            src="../../../assets/library/group-48095650@2x.png"
+          />
+        </div>
+        <img
+          class="vector-icon"
+          alt="cloud"
+          src="../../../assets/library/vector@2x.png"
         />
       </div>
-      <img
-        class="vector-icon"
-        alt="cloud"
-        src="../../../assets/library/vector@2x.png"
-      />
     </div>
     <img
       class="union-icon"
@@ -58,4 +60,62 @@
       src="../../../assets/library/union.svg"
     />
   </div>
-</div>
+</header>
+<main>
+  <div class="container">
+    <div class="d-flex flex-column">
+      <app-filter-bar class="mt-2"></app-filter-bar>
+      <div class="book-parent d-flex justify-content-start mt-2">
+        @for (item of number; track $index) {
+        <app-book></app-book>
+        }
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="position-relative mt-2">
+  <div class="w-100">
+    <div class="logo-holder position-absolute d-flex flex-column">
+      <img
+        class="logo-footer"
+        src="/assets/image/footer/kids-logo-copy-1@2x.png"
+        alt="logo"
+      />
+      <strong>
+        <img width="25" src="/assets/image/footer/calling.svg" alt="calling" />
+        تلفن های آکادمی
+      </strong>
+      <span class="tel-number"> ۰۵۱-۳۷۶۳۷۵۲۶ </span>
+      <span class="tel-number"> ۰۵۱-۳۷۶۶۹۲۹۵ </span>
+      <strong>
+        <img width="25" src="/assets/image/footer/location.png" alt="calling" />
+        آدرس
+      </strong>
+      <span> مشهد - بلوار فلسطین - فلسطین ۱۰ - پلاک ۳۴ </span>
+    </div>
+    <div class="link-holder position-absolute d-flex flex-column">
+      <strong> لینک های مفید </strong>
+      <span> سوال‌های متداول </span>
+      <span>خدمات</span>
+      <span>اخبار</span>
+      <span>تیم ما</span>
+    </div>
+    <div class="social-network position-absolute d-flex flex-column">
+      <strong> با ما در تماس باشید </strong>
+      <span>
+        <img width="25" src="/assets/image/footer/heart.svg" alt="calling" />
+        شبکه های اجتماعی
+      </span>
+      <div class="d-flex justify-content-between">
+        <img width="40" src="/assets/image/footer/whatsap.svg" alt="whatsap" />
+        <img
+          width="40"
+          src="/assets/image/footer/telegram.svg"
+          alt="telegram"
+        />
+        <img width="40" src="/assets/image/footer/insta.svg" alt="instagram" />
+        <img width="40" src="/assets/image/footer/in.svg" alt="in" />
+      </div>
+    </div>
+  </div>
+</footer>

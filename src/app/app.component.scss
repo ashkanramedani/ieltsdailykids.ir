@@ -1,0 +1,12 @@
+::ng-deep .nb-theme-default nb-layout-header nav {
+  box-shadow: unset !important;
+}
+
+nb-layout-column {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    176deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(225, 236, 243, 1) 100%
+  );
+}

@@ -1,3 +1,5 @@
+@import "../../../themes.scss";
+
 .podcast-header {
   width: 100%;
   position: relative;
@@ -12,12 +14,22 @@ h6 {
   line-height: 41px;
   width: 42rem;
 }
-.library {
-  text-align: right;
-  font-size: 3.563rem;
-  color: #fff;
-  line-height: 86px;
+.wrapper {
+  .library {
+    text-align: right;
+    color: #fff;
+    font-family: var(--font-family-javan);
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+  }
+  p {
+    font-family: var(--font-family-secondary);
+    line-height: 32px;
+    text-align: justify;
+  }
 }
+
 .union-icon {
   position: absolute;
   bottom: 0;
@@ -71,4 +83,44 @@ h6 {
   left: 18.21%;
   max-height: 100%;
   object-fit: cover;
+}
+
+.book-parent {
+  flex-shrink: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.125rem;
+  text-align: left;
+  font-size: 1.125rem;
+  font-family: var(--font-family-primary);
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  height: 30rem;
+  text-align: right;
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: var(--font-family-primary);
+  background: url(../../../assets/image/footer/footer.svg);
+  object-fit: cover;
+  .logo-holder {
+    line-height: 43px;
+    top: 9rem;
+    right: 14rem;
+    img.logo-footer {
+      width: 9rem;
+    }
+  }
+  .link-holder {
+    line-height: 43px;
+    top: 13rem;
+    right: 52rem;
+  }
+  .social-network {
+    line-height: 43px;
+    top: 13rem;
+    left: 14rem;
+  }
 }

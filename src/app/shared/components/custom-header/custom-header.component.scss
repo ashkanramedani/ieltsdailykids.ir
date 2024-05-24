@@ -1,8 +1,13 @@
+@import "../../../../themes.scss";
 .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 95vw;
+  .logo img {
+    width: 77%;
+    object-fit: cover;
+  }
 }
 .lbl_menu {
   text-align: center;
@@ -22,4 +27,8 @@
     color: #019da4;
     text-align: center;
   }
+}
+
+nb-action {
+  font-family: nb-theme(font-family-primary);
 }

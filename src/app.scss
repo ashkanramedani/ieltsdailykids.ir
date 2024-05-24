@@ -1,7 +1,19 @@
+@font-face {
+  font-family: iranSansLight;
+  src: url(./assets/fonts/ttf/IRANSansDN.ttf) format("ttf"),
+    url(./assets/fonts/woff/IRANSansDN_FaNum_Light.woff) format("woff"),
+    url(./assets/fonts/eot/IRANSansDN_FaNum_Light.eot) format("eot");
+}
+@font-face {
+  font-family: iranSansjavan;
+  src: url(./assets/fonts/ttf/IRANSansDNn.ttf) format("ttf"),
+    url(./assets/fonts/woff/javan.woff) format("woff"),
+    url(./assets/fonts/eot/javan.eot) format("eot");
+}
 
 @font-face {
-  font-family: iranSansDN;
-  src: url(./assets/fonts/ttf/IRANSansDN.ttf) format("ttf"),
+  font-family: iranSansDNnn;
+  src: url(./assets/fonts/ttf/IRANSansDNnn.ttf) format("ttf"),
     url(./assets/fonts/woff/IRANSansDN_FaNum_Light.woff) format("woff"),
     url(./assets/fonts/eot/IRANSansDN_Fa_Num.eot) format("eot");
 }
@@ -11,6 +23,15 @@
   src: url(./assets/fonts/ttf/IRANSansDN-Bold.ttf) format("ttf"),
     url(./assets/fonts/woff/IRANSansDN_FaNum-Bold.woff) format("woff"),
     url(./assets/fonts/eot/IRANSansDN_FaNum-Bold.eot) format("eot");
+}
+
+@font-face {
+  font-family: iranYekanNumber;
+  src: url(./assets/fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf)
+      format("ttf"),
+    url(./assets/fonts/iranyekan/woff/iranyekanwebregularfanum.woff)
+      format("woff"),
+    url(./assets/fonts/iranyekan/eot/iranyekanwebregularfanum.eot) format("eot");
 }
 @for $i from 10 through 60 {
   .f-#{$i} {
@@ -73,18 +94,17 @@ hr {
   margin: 0;
 }
 body {
-  font-family: iranSansDN !important;
+  font-family: iranSansLight !important;
   background-color: #f9fafd;
-  background-image: linear-gradient(45deg, #f2f9fb, #f9f7f7, #f9f7f7);
-  overflow: hidden;
+  overflow: auto;
   direction: rtl;
 }
-nb-action,
+
 nb-user,
 nb-layout-header,
 nb-card-header,
 nb-card-body {
-  font-family: iranSansDN !important;
+  font-family: iranSansLight !important;
   text-align: start;
 }
 

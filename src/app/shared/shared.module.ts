@@ -21,6 +21,8 @@ import {
   NbUserModule,
 } from '@nebular/theme';
 import { NbSecurityModule } from '@nebular/security';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+
 // import * as _sharePipe from '@share/pipes';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -32,12 +34,14 @@ import * as kiComponent from './ki-components';
 import { NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { CustomHeaderComponent, PinCodeComponent } from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
+import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 // import * as _templates from './components/templates';
 // import * as _organisms from './components/organisms';
 
 const component = [
   CustomHeaderComponent,
   PinCodeComponent,
+  FilterBarComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,
@@ -82,6 +86,7 @@ const component = [
     NbSelectModule,
     NbIconModule,
     NbContextMenuModule,
+    NbEvaIconsModule,
     NgxMaskModule.forRoot(),
     NbMenuModule.forRoot(),
   ],
@@ -106,6 +111,7 @@ const component = [
     NbToastrModule,
     NbDatepickerModule,
     NbSelectModule,
+    NbEvaIconsModule,
     NbIconModule,
     NgxMaskModule,
     NbMenuModule,
