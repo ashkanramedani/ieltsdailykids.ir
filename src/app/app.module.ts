@@ -19,7 +19,11 @@ import { SharedModule } from './shared/shared.module';
 import { IdpModule } from './idp/idp.module';
 import { LibraryComponent } from './pages/library/library.component';
 import { BookComponent } from './pages/components/book/book.component';
-import { ProductsComponent } from './pages';
+import {
+  LayoutComponent,
+  ProductsComponent,
+  ProductsDetailsComponent,
+} from './pages';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,8 @@ import { ProductsComponent } from './pages';
     LibraryComponent,
     BookComponent,
     ProductsComponent,
+    ProductsDetailsComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,

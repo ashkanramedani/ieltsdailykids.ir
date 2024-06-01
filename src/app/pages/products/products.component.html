@@ -69,79 +69,46 @@
   <div class="container">
     <div class="d-flex flex-column">
       <app-filter-bar class="mt-2"></app-filter-bar>
-      <div class="mt-4">
-        <div class="container-article d-flex justify-content-around p-4">
-          <div class="w-30">
-            <img
-              class="img-card"
-              src="../../../assets/image/products/pro.png"
-              alt="buy"
-            />
-          </div>
-          <div class="w-35">
-            <h6 class="mb-3">
-              لگو سری نینجاگو مدل 71795 - LEGO 71795 Temple of the Dragon Energy
-              Spheres
-            </h6>
-            <p class="paragraph-card">
-              LEGO 71795 Temple of the Dragon Energy Spheres یکی از مجموعه های
-              متعدد تم لگو نینجاگو است. ویژگی‌ها معبد NINJAGO کودکان 8 سال و
-              بالاتر می‌توانند صحنه‌ای کلیدی از مجموعه تلویزیونی NINJAGO Dragons
-              Rise را با Temple of the Dragon Energy Spheres (71795) 6 مینی
-              فیگور Kai، هر کدام با 2 طلایی بازسازی کنند.کاتاناس نیا و کول، روح
-              معبد با شمشیر طلایی بزرگ، لرد راس با چکش طلایی و ملکه بئاتریکس با
-              شمشیر امپریومتله های مخفی مدل معبد دارای تله های مختلفی از جمله
-              سقوط تنه درختان، بالکن فرو ریخته، مجسمه واژگون شده و سقوط سنگ در
-              کتابخانه پاداش بزرگ معبد همچنین دارای یک گوی انرژی اژدها است
-              کهشخصیت‌ها برای آن مبارزه می‌کنند، که همچنین یک کلکسیون
-              سرگرم‌کننده برای طرفداران هاردکور NINJAGO استایده هدیه برای کودکان
-              8 سال به بالا، این مجموعه ساختمانی 1029 قطعه ای یک ساختمان سرگرم
-              کننده و تجربه بازی را فراهم می کند و برای هدیه تولد یا کریسمس عالی
-              است.
-            </p>
-          </div>
-          <div class="w-30">
-            <div class="containerdiv-card">
-              <div class="containerdiv-price w-100">
-                <div class="containerdiv-row">
-                  <div class="textspan1">قیمت</div>
-                  <div class="textspan">
-                    <div class="div3">تومان</div>
-                    <div class="div4">140,000</div>
-                  </div>
-                </div>
-                <div class="containerdiv-row1 mb-3">
-                  <div class="containerdiv-price-step">
-                    <img
-                      class="button-min-icon"
-                      alt=""
-                      src="../../../assets/image/products/buttonmin.svg"
-                    />
 
-                    <div class="span">2</div>
-                    <img
-                      class="button-min-icon"
-                      alt=""
-                      src="../../../assets/image/products/buttonmax.svg"
-                    />
-                  </div>
-                  <div class="b">در سبد شما</div>
-                </div>
-              </div>
-              <button class="button-add-to-card">
-                <img
-                  class="button-min-icon"
-                  alt=""
-                  src="../../../assets/image/products/icon.svg"
-                />
-                <div class="span1">افزودن به سبد خرید</div>
-              </button>
+      <div class="mt-5 position-relative container-section-holder-boxs mb-5">
+        @for (item of number; track $index) {
+        <div class="shop mt-3">
+          <div class="holder-image">
+            <img
+              loading="lazy"
+              class="image-icon10"
+              alt="products"
+              src="../../../assets/image/products/pro.png"
+            />
+
+            <div class="transaction-minus-wrapper">
+              <img
+                class="button-min-icon"
+                alt="products"
+                src="../../../assets/image/products/transaction-minus.svg"
+              />
             </div>
           </div>
+          <div class="lego-loot-llama">Lego king</div>
+          <hr />
+
+          <div class="d-flex div-row justify-content-between p-3">
+            <div class="textprice-old f-15">
+              <span class="through">۱۵۰،۰۰۰</span>
+              <span class="b">تومان</span>
+            </div>
+            <div class="textspan w-50 f-15">
+              <b class="b1">۱۴۵،۰۰۰</b>
+              <b class="b">تومان</b>
+            </div>
+          </div>
+          <button class="button w-90" routerLink="/detail/12">
+            <i class="fa-solid fa-eye" style="color: white"></i>
+            <span class="buy me-3">مشاهده</span>
+          </button>
         </div>
-      </div>
-      <div class="mt-5 position-relative mb-5">
-        <app-swiper></app-swiper>
+
+        }
       </div>
     </div>
   </div>

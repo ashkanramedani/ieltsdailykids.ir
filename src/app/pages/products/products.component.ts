@@ -5,4 +5,6 @@ import { AfterViewInit, Component } from '@angular/core';
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })
-export class ProductsComponent {}
+export class ProductsComponent {
+  number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+}
