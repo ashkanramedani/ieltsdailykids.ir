@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LibraryComponent } from './pages';
+import { LibraryComponent, ProductsComponent } from './pages';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'library', pathMatch: 'prefix' },
+  { path: '', redirectTo: 'products', pathMatch: 'prefix' },
   { component: LibraryComponent, path: 'library' },
+  { component: ProductsComponent, path: 'products' },
 ];
 
 @NgModule({

@@ -3,6 +3,9 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 // import * as _shareCmp from '@share/components';
 // import * as _shareDir from '@share/directives';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { translateModuleConfig } from './translate/translate-config.module';
+
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import {
   NbActionsModule,
@@ -22,25 +25,24 @@ import {
 } from '@nebular/theme';
 import { NbSecurityModule } from '@nebular/security';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-
 // import * as _sharePipe from '@share/pipes';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxMaskModule } from 'ngx-mask';
-
 import * as kiComponent from './ki-components';
-
 import { NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { CustomHeaderComponent, PinCodeComponent } from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
+import { SwiperComponent } from './components/swiper/swiper.component';
 // import * as _templates from './components/templates';
 // import * as _organisms from './components/organisms';
 
 const component = [
   CustomHeaderComponent,
   PinCodeComponent,
+  SwiperComponent,
   FilterBarComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
@@ -87,6 +89,7 @@ const component = [
     NbIconModule,
     NbContextMenuModule,
     NbEvaIconsModule,
+    TranslateModule.forRoot(translateModuleConfig),
     NgxMaskModule.forRoot(),
     NbMenuModule.forRoot(),
   ],

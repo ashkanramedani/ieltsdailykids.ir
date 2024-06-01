@@ -1,0 +1,106 @@
+swiper-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  min-height: 537px;
+}
+.container-section-holder-boxs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+swiper-slide {
+  max-width: 20rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.swiper-button-prev {
+  width: 100px;
+  height: 100px;
+  left: -7rem;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next {
+  width: 100px;
+  height: 100px;
+  right: -7rem;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-prev-img {
+  width: 12rem !important;
+}
+.swiper-button-next::after {
+  display: none !important;
+}
+
+.swiper-button-prev::after {
+  display: none !important;
+}
+.shop {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  .holder-image {
+    position: relative;
+    height: 19rem;
+    text-align: center;
+
+    .image-icon10 {
+      border-radius: 20px;
+      object-fit: contain;
+      height: 100%;
+    }
+    .transaction-minus-wrapper {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+    }
+  }
+  .lego-loot-llama {
+    font-weight: 700;
+    text-align: end;
+    line-height: 34px;
+  }
+  .div-row {
+    font-size: 12px;
+    color: #019da4;
+    .textspan {
+      gap: 2px;
+    }
+  }
+  .textprice-old {
+    color: #bcbcbc;
+    .through {
+      text-decoration: line-through;
+    }
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    background-color: #019da4;
+    border-radius: 10px;
+    .buy {
+      color: white;
+    }
+  }
+}

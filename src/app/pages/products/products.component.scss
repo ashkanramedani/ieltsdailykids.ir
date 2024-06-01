@@ -1,0 +1,258 @@
+@import "../../../themes.scss";
+
+main {
+  font-family: var(--font-family-primary);
+  text-align: right;
+}
+.podcast-header {
+  width: 100%;
+  position: relative;
+  height: 31.25rem;
+  background-color: #c2b1ef;
+  text-align: right;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #19313a;
+  line-height: 41px;
+}
+.wrapper {
+  .library {
+    text-align: right;
+    color: #fff;
+    font-family: var(--font-family-javan);
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+  }
+  p {
+    font-family: var(--font-family-secondary);
+    line-height: 32px;
+    text-align: justify;
+  }
+}
+
+.union-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.objects-icon1 {
+  position: absolute;
+  width: 5rem;
+  right: 16rem;
+  object-fit: contain;
+}
+.objects-icon3 {
+  position: absolute;
+  width: 4rem;
+  object-fit: contain;
+  left: 17rem;
+  top: 11rem;
+}
+.objects-icon-left {
+  left: 22rem;
+  position: absolute;
+  width: 3rem;
+  top: 10rem;
+  object-fit: contain;
+}
+.podcast-header-item {
+  top: 2rem;
+  width: 5rem;
+  position: absolute;
+  object-fit: contain;
+  left: 15rem;
+}
+.objects-icon2 {
+  position: absolute;
+  width: 4rem;
+  right: 17rem;
+  top: 7rem;
+  object-fit: contain;
+}
+.layer-1-icon {
+  object-fit: contain;
+  width: 8rem;
+  position: absolute;
+  right: 18rem;
+  top: 7rem;
+}
+.book-reader-2 {
+  top: 1.8%;
+  right: 33.84%;
+  object-fit: contain;
+  position: absolute;
+  width: 20rem;
+  z-index: 144;
+}
+.vector-icon {
+  position: absolute;
+  height: 35%;
+  top: 48.4%;
+  left: 18.21%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  height: 30rem;
+  text-align: right;
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: var(--font-family-primary);
+  background: url(../../../assets/image/footer/footer.svg);
+  object-fit: cover;
+  .logo-holder {
+    line-height: 43px;
+    top: 9rem;
+    right: 14rem;
+    img.logo-footer {
+      width: 9rem;
+    }
+  }
+  .link-holder {
+    line-height: 43px;
+    top: 13rem;
+    right: 52rem;
+  }
+  .social-network {
+    line-height: 43px;
+    top: 13rem;
+    left: 14rem;
+  }
+}
+
+.paragraph-card {
+  line-height: 27px;
+  text-align: justify;
+  font-family: var(--font-family-primary);
+}
+.container-article {
+  border-radius: 50px;
+  position: relative;
+  gap: 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #019da4;
+  width: 1276px;
+  position: relative;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+  background-color: rgba(246, 249, 251, 0.5);
+  height: 635px;
+  z-index: 0;
+  .div3,
+  .div4 {
+    position: relative;
+    line-height: 160%;
+    font-weight: 900;
+    font-family: var(--font-family-secondary);
+  }
+  .b,
+  .b1,
+  .div7 {
+    position: relative;
+    line-height: 160%;
+  }
+  .img-card {
+    object-fit: contain;
+    width: 100%;
+  }
+  .containerdiv-card {
+    width: 22rem;
+    border-radius: 20px;
+    background-color: #fafbfe;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 33px;
+    .containerdiv-price {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      .containerdiv-row {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .textspan {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 2px;
+        }
+        .textspan1 {
+          position: relative;
+          font-size: 14px;
+          line-height: 160%;
+          color: #384045;
+        }
+      }
+
+      .containerdiv-row1 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 14px;
+        color: #384045;
+        display: flex;
+        .containerdiv-price-step {
+          border-radius: 10px;
+          background-color: rgba(1, 157, 164, 0.1);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 13px 20px;
+          gap: 15px;
+          text-align: center;
+          font-size: 16px;
+          color: #019da4;
+          .button-min-icon {
+            width: 24px;
+            position: relative;
+            height: 24px;
+          }
+          .span {
+            position: relative;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+    .button-add-to-card {
+      cursor: pointer;
+      border: 0;
+      padding: 15px 30px;
+      background-color: #019da4;
+      align-self: stretch;
+      border-radius: 10px;
+      display: flex;
+      color: #fff;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      .span1 {
+        position: relative;
+        font-size: 14px;
+        font-weight: 900;
+        font-family: var(--font-family-secondary);
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<swiper-container id="swiper_review" class="mySwiper" init="false">
+  <!-- <div class="container-section-holder-boxs"> -->
+  @for (item of number; track $index) {
+  <swiper-slide>
+    <div class="shop">
+      <div class="holder-image">
+        <img
+          loading="lazy"
+          class="image-icon10"
+          alt="products"
+          src="../../../assets/image/products/pro.png"
+        />
+
+        <div class="transaction-minus-wrapper">
+          <img
+            class="button-min-icon"
+            alt="products"
+            src="../../../assets/image/products/transaction-minus.svg"
+          />
+        </div>
+      </div>
+      <div class="lego-loot-llama">Lego king</div>
+      <hr />
+
+      <div class="d-flex div-row justify-content-between p-3">
+        <div class="textprice-old f-15">
+          <span class="through">۱۵۰،۰۰۰</span>
+          <span class="b">تومان</span>
+        </div>
+        <div class="textspan w-50 f-15">
+          <b class="b1">۱۴۵،۰۰۰</b>
+          <b class="b">تومان</b>
+        </div>
+      </div>
+      <button class="button w-90">
+        <img
+          class="button-min-icon"
+          alt=""
+          src="../../../assets/image/products/button.svg"
+        />
+        <span class="buy me-3">خرید</span>
+      </button>
+    </div>
+  </swiper-slide>
+  }
+
+  <!-- </div> -->
+</swiper-container>
+<div class="swiper-button-prev">
+  <img
+    class="button-prev-img"
+    src="../../../assets/image/products/spider@2x.png"
+    alt=""
+  />
+</div>
+<div class="swiper-button-next">
+  <img src="../../../assets/image/products/Spider.png" alt="" />
+</div>

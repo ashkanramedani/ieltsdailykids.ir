@@ -42,6 +42,7 @@
               "node_modules/@fortawesome/fontawesome-free/css/v4-shims.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/@nebular/theme/styles/prebuilt/default.css",
+              "node_modules/swiper/swiper-bundle.min.css",
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
@@ -51,7 +52,9 @@
               "eva-icons",
               "jalali-moment"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/swiper/swiper-element-bundle.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

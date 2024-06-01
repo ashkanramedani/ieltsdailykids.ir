@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
@@ -19,8 +19,15 @@ import { SharedModule } from './shared/shared.module';
 import { IdpModule } from './idp/idp.module';
 import { LibraryComponent } from './pages/library/library.component';
 import { BookComponent } from './pages/components/book/book.component';
+import { ProductsComponent } from './pages';
+
 @NgModule({
-  declarations: [AppComponent, LibraryComponent, BookComponent],
+  declarations: [
+    AppComponent,
+    LibraryComponent,
+    BookComponent,
+    ProductsComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -35,5 +42,6 @@ import { BookComponent } from './pages/components/book/book.component';
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

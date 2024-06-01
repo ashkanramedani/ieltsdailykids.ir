@@ -12,12 +12,16 @@
       <i class="fa-chevron-down fa-solid f-12 me-1 mt-1"></i>
     </nb-action>
     <nb-action class="p-2">
-      <span class="lbl_menu pe-1"> محصولات </span>
-      <i class="fa-chevron-down fa-solid f-12 me-1 mt-1"></i>
+      <a routerLink="products">
+        <span class="lbl_menu pe-1"> محصولات </span>
+        <i class="fa-chevron-down fa-solid f-12 me-1 mt-1"></i>
+      </a>
     </nb-action>
     <nb-action class="p-2">
-      <span class="lbl_menu pe-1"> کتابخانه </span>
-      <i class="fa-chevron-down fa-solid f-12 me-1 mt-1"></i>
+      <a routerLink="library">
+        <span class="lbl_menu pe-1"> کتابخانه </span>
+        <i class="fa-chevron-down fa-solid f-12 me-1 mt-1"></i>
+      </a>
     </nb-action>
     <nb-action class="p-2">
       <span class="lbl_menu pe-1"> محتوا آموزشی </span>
@@ -30,7 +34,7 @@
   </div>
   <div class="login">
     <img src="/assets/menu/Login.svg" alt="login" />
-    <button class="btn_login">
+    <button class="btn_login" (click)="show()">
       <span>ورود | ثبت نام</span>
     </button>
     <img src="/assets/menu/Buy.svg" alt="Buy" class="me-3" />
