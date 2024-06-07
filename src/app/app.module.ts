@@ -23,11 +23,13 @@ import {
   LayoutComponent,
   ProductsComponent,
   ProductsDetailsComponent,
+  WorkShopComponent,
 } from './pages';
 
 @NgModule({
   declarations: [
     AppComponent,
+    WorkShopComponent,
     LibraryComponent,
     BookComponent,
     ProductsComponent,

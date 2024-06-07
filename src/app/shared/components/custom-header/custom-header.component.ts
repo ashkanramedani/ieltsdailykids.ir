@@ -3,8 +3,9 @@ import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 // import { NbAuthJWTToken, NbAuthService } from '@nebular/auth';
 // import { NbAccessChecker } from '@nebular/security';
-import { NbMenuItem, NbThemeService } from '@nebular/theme';
+import { NbMenuItem, NbMenuService, NbThemeService } from '@nebular/theme';
 import { OpenPagesIdpService } from '../../../idp/services/open-page-idp.service';
+import { filter, map } from 'rxjs';
 // import { NbIsGrantedDirective } from '@nebular/security';
 
 @Component({
@@ -20,15 +21,23 @@ export class CustomHeaderComponent implements OnInit {
   currentTheme = new FormControl('');
 
   items = [{ title: 'Profile' }, { title: 'Logout' }];
+  items1 = [{ title: 'کارگاه', link: 'work-shop' }, { title: 'Logout' }];
   themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
   //   private authService: NbAuthService,
   // public accessChecker: NbAccessChecker,
   constructor(
     private router: Router,
     private themeService: NbThemeService,
-    private _openPagesIdpService: OpenPagesIdpService
+    private _openPagesIdpService: OpenPagesIdpService,
+    private nbMenuService: NbMenuService
   ) {
     this.currentTheme.setValue(this.themeService.currentTheme);
+    this.nbMenuService
+      .onItemClick()
+      .pipe(filter(({ tag }) => tag === 'my-context-menu'))
+      .subscribe((item) => {
+        this.router.navigate([item.item.link]);
+      });
   }
 
   ngOnInit(): void {

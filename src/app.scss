@@ -103,11 +103,15 @@ body {
 nb-user,
 nb-layout-header,
 nb-card-header,
+nb-menu,
 nb-card-body {
   font-family: iranSansLight !important;
   text-align: start;
 }
-
+a {
+  font-family: iranSansLight !important;
+  text-align: center;
+}
 .rtl {
   direction: rtl;
 }

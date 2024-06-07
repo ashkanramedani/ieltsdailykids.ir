@@ -5,15 +5,16 @@ import {
   LibraryComponent,
   ProductsComponent,
   ProductsDetailsComponent,
+  WorkShopComponent,
 } from './pages';
 
 const routes: Routes = [
   { path: '', redirectTo: 'products', pathMatch: 'prefix' },
   { component: LibraryComponent, path: 'library' },
+  { component: WorkShopComponent, path: 'work-shop' },
   {
     component: LayoutComponent,
     path: 'products',
-
     children: [
       {
         path: 'list',
