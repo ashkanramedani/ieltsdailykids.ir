@@ -21,7 +21,10 @@ export class CustomHeaderComponent implements OnInit {
   currentTheme = new FormControl('');
 
   items = [{ title: 'Profile' }, { title: 'Logout' }];
-  items1 = [{ title: 'کارگاه', link: 'work-shop' }, { title: 'Logout' }];
+  items1 = [
+    { title: 'کارگاه', link: 'work-shop' },
+    { title: 'cours', link: 'cours' },
+  ];
   themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
   //   private authService: NbAuthService,
   // public accessChecker: NbAccessChecker,
