@@ -20,6 +20,7 @@ import { IdpModule } from './idp/idp.module';
 import { LibraryComponent } from './pages/library/library.component';
 import { BookComponent } from './pages/components/book/book.component';
 import {
+  CoursComponent,
   LayoutComponent,
   ProductsComponent,
   ProductsDetailsComponent,
@@ -31,6 +32,7 @@ import {
     AppComponent,
     WorkShopComponent,
     LibraryComponent,
+    CoursComponent,
     BookComponent,
     ProductsComponent,
     ProductsDetailsComponent,

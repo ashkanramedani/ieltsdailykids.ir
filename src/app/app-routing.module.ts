@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
+  CoursComponent,
   LayoutComponent,
   LibraryComponent,
   ProductsComponent,
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'products', pathMatch: 'prefix' },
   { component: LibraryComponent, path: 'library' },
   { component: WorkShopComponent, path: 'work-shop' },
+  { component: CoursComponent, path: 'cours' },
   {
     component: LayoutComponent,
     path: 'products',
