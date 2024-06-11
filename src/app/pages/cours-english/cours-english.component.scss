@@ -1,0 +1,200 @@
+@import "../../../themes.scss";
+
+.podcast-header {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #003d76;
+  text-align: right;
+}
+h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #19313a;
+  line-height: 41px;
+  width: 42rem;
+}
+.wrapper {
+  .library {
+    text-align: right;
+    color: #fff;
+    font-family: var(--font-family-javan);
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+  }
+  p {
+    font-family: var(--font-family-secondary);
+    line-height: 32px;
+    text-align: justify;
+    color: white;
+  }
+}
+main {
+  direction: ltr;
+}
+
+.union-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.objects-icon1 {
+  position: absolute;
+  width: 4rem;
+  right: 24rem;
+  object-fit: contain;
+}
+.objects-icon3,
+.podcast-header-item {
+  position: absolute;
+  width: 7rem;
+  object-fit: contain;
+  left: 15rem;
+  top: 11rem;
+}
+.podcast-header-item {
+  top: 2rem;
+}
+.objects-icon2 {
+  position: absolute;
+  width: 3rem;
+  right: 25rem;
+  top: 8rem;
+  object-fit: contain;
+}
+.layer-1-icon {
+  object-fit: contain;
+  width: 16rem;
+  position: absolute;
+  right: 10rem;
+}
+.book-reader-2 {
+  height: 80%;
+  top: 9.8%;
+  right: 35.84%;
+  object-fit: contain;
+  position: absolute;
+  width: 24rem;
+  z-index: 144;
+}
+.vector-icon {
+  position: absolute;
+  height: 35%;
+  top: 48.4%;
+  left: 18.21%;
+  max-height: 100%;
+  object-fit: cover;
+}
+///
+.containersection, .parent14 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.containerdiv, .containersection1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div-flex-inner, .div-title, .parent5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.containersection {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-3xs) 0;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-iranyekanweb);
+  .containerdiv {
+    border-radius: var(--br-11xl);
+    background-color: var(--color-white);
+    align-items: center;
+    width: 27rem;
+    box-sizing: border-box;
+    gap: var(--gap-xs);
+    .div-title {
+      width: 100%;
+      border-radius: var(--br-11xl) var(--br-11xl) 0 0;
+      background-color: var(--secondery);
+      padding: var(--padding-xl) var(--padding-11xl) var(--padding-3xs);
+      box-sizing: border-box;
+      padding: var(--padding-6xl) var(--padding-6xl);
+      .span {
+        position: relative;
+        font-weight: 800;
+        text-align: right;
+        font-size: var(--font-size-smi);
+        color: var(--color-white);
+    }
+    .span-code {
+      width: 80px;
+      position: relative;
+      font-size: var(--font-size-sm);
+      color: var(--black);
+      font-family: var(--font-iranyekanfn);
+      border-radius: var(--br-31xl);
+      background-color: var(--color-white);
+      line-height:35px;
+  }
+  }
+  .containersection1 {
+    align-self: stretch;
+    align-items: flex-end;
+    gap: var(--gap-lg);
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    font-family: var(--font-iranyekanfn);
+    padding:  var(--padding-6xl) var(--padding-6xl);
+    .div-row{
+      border-bottom: 1px solid var(--gray);
+      .div-flex-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
+
+}
+}
+}
+
+//
+
+footer {
+  width: 100%;
+  position: relative;
+  height: 30rem;
+  text-align: right;
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: var(--font-family-primary);
+  background: url(../../../assets/image/footer/footer.svg);
+  object-fit: cover;
+  .logo-holder {
+    line-height: 43px;
+    top: 9rem;
+    right: 14rem;
+    img.logo-footer {
+      width: 9rem;
+    }
+  }
+  .link-holder {
+    line-height: 43px;
+    top: 13rem;
+    right: 52rem;
+  }
+  .social-network {
+    line-height: 43px;
+    top: 13rem;
+    left: 14rem;
+  }
+}

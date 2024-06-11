@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
   CoursComponent,
+  CoursEnglishComponent,
   LayoutComponent,
   LibraryComponent,
   ProductsComponent,
@@ -14,6 +15,7 @@ const routes: Routes = [
   { component: LibraryComponent, path: 'library' },
   { component: WorkShopComponent, path: 'work-shop' },
   { component: CoursComponent, path: 'cours' },
+  { component: CoursEnglishComponent, path: 'cours-english' },
   {
     component: LayoutComponent,
     path: 'products',
