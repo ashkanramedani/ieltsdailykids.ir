@@ -24,10 +24,15 @@ export class CustomHeaderComponent implements OnInit {
   items1 = [
     { title: 'کارگاه', link: 'work-shop' },
     { title: 'cours', link: 'cours' },
+    { title: 'cours-english', link: 'cours-english' },
+    { title: 'cours-french', link: 'cours-french' },
+    { title: 'french', link: 'french' },
+    { title: 'class', link: 'class' },
+    { title: 'placement', link: 'placement' },
   ];
   themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
   //   private authService: NbAuthService,
-  // public accessChecker: NbAccessChecker,
+  // public accessChecker: NbAccessChecker cours-french,
   constructor(
     private router: Router,
     private themeService: NbThemeService,

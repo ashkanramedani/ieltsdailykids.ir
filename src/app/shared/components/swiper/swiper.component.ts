@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, Input, TemplateRef } from '@angular/core';
 import Swiper from 'swiper';
 import { register } from 'swiper/element/bundle';
 import { Navigation } from 'swiper/modules';
@@ -10,6 +10,7 @@ import { SwiperOptions } from 'swiper/types';
 })
 export class SwiperComponent implements AfterViewInit {
   swiperEl: any;
+  @Input() public dynamicTemplate: TemplateRef<any>;
   constructor() {
     register();
   }

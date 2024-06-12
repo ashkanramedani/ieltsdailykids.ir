@@ -1,0 +1,93 @@
+.containerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.div-flex-inner,
+.div-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.containerdiv {
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  align-items: center;
+  width: 27rem;
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  .div-title {
+    width: 100%;
+    border-radius: var(--br-11xl) var(--br-11xl) 0 0;
+    background-color: var(--secondery);
+    box-sizing: border-box;
+    line-height: 60px;
+    .span {
+      position: relative;
+      font-weight: 800;
+      text-align: right;
+      font-size: var(--font-size-smi);
+      color: var(--color-white);
+    }
+    .span-code {
+      width: 80px;
+      position: relative;
+      font-size: var(--font-size-sm);
+      color: var(--black);
+      font-family: var(--font-iranyekanfn);
+      border-radius: var(--br-31xl);
+      background-color: var(--color-white);
+      line-height: 35px;
+    }
+  }
+  .containersection1 {
+    align-self: stretch;
+    align-items: flex-end;
+    gap: var(--gap-lg);
+    font-size: var(--font-size-sm);
+    color: var(--gray);
+    font-family: var(--font-iranyekanfn);
+    padding: 0 var(--padding-6xl) var(--padding-6xl);
+    .div-row {
+      border-bottom: 1px solid var(--border-color);
+      line-height: 40px;
+      .div-flex-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .section-day-of-week {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: var(--gap-3xs);
+      color: var(--black);
+      font-family: var(--font-iranyekanweb);
+      .frame-parent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: var(--gap-5xs);
+        text-align: center;
+        font-size: var(--font-size-3xs);
+        color: var(--gray);
+        font-family: var(--font-iranyekanmsn);
+        .wrapper {
+          border-radius: var(--br-8xs);
+          background-color: var(--color-whitesmoke);
+          align-items: center;
+          justify-content: center;
+          padding: var(--padding-8xs) var(--padding-3xs);
+          position: relative;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

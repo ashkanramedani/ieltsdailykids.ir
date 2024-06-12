@@ -36,6 +36,9 @@ import { CustomHeaderComponent, PinCodeComponent } from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 import { SwiperComponent } from './components/swiper/swiper.component';
+import { InfoBoxClassComponent } from './components/info-box-class/info-box-class.component';
+import { BoxImgPlyComponent } from './components/box-img-ply/box-img-ply.component';
+import { ItemShopComponent } from './components/item-shop/item-shop.component';
 // import * as _templates from './components/templates';
 // import * as _organisms from './components/organisms';
 
@@ -44,6 +47,9 @@ const component = [
   PinCodeComponent,
   SwiperComponent,
   FilterBarComponent,
+  InfoBoxClassComponent,
+  BoxImgPlyComponent,
+  ItemShopComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,

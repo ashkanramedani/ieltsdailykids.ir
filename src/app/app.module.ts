@@ -20,8 +20,13 @@ import { IdpModule } from './idp/idp.module';
 import { LibraryComponent } from './pages/library/library.component';
 import { BookComponent } from './pages/components/book/book.component';
 import {
+  ClassPageComponent,
   CoursComponent,
+  CoursEnglishComponent,
+  CoursFrenchComponent,
+  FrenchComponent,
   LayoutComponent,
+  PlacementComponent,
   ProductsComponent,
   ProductsDetailsComponent,
   WorkShopComponent,
@@ -33,9 +38,14 @@ import {
     WorkShopComponent,
     LibraryComponent,
     CoursComponent,
+    CoursEnglishComponent,
+    CoursFrenchComponent,
     BookComponent,
     ProductsComponent,
     ProductsDetailsComponent,
+    FrenchComponent,
+    ClassPageComponent,
+    PlacementComponent,
     LayoutComponent,
   ],
   imports: [

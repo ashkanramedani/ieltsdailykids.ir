@@ -1,10 +1,14 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {
+  ClassPageComponent,
   CoursComponent,
   CoursEnglishComponent,
+  CoursFrenchComponent,
+  FrenchComponent,
   LayoutComponent,
   LibraryComponent,
+  PlacementComponent,
   ProductsComponent,
   ProductsDetailsComponent,
   WorkShopComponent,
@@ -16,6 +20,10 @@ const routes: Routes = [
   { component: WorkShopComponent, path: 'work-shop' },
   { component: CoursComponent, path: 'cours' },
   { component: CoursEnglishComponent, path: 'cours-english' },
+  { component: CoursFrenchComponent, path: 'cours-french' },
+  { component: FrenchComponent, path: 'french' },
+  { component: ClassPageComponent, path: 'class' },
+  { component: PlacementComponent, path: 'placement' },
   {
     component: LayoutComponent,
     path: 'products',

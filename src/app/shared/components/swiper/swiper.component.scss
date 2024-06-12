@@ -3,6 +3,9 @@ swiper-container {
   position: relative;
   margin: auto;
   min-height: 537px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container-section-holder-boxs {
   display: flex;
@@ -14,7 +17,6 @@ swiper-container {
 }
 
 swiper-slide {
-  max-width: 20rem;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -30,6 +32,7 @@ swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: moveBackward 2s ease-in-out infinite;
 }
 .swiper-button-next {
   width: 100px;
@@ -40,6 +43,12 @@ swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: moveForward 2s ease-in-out infinite;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transition: transform 0.5s;
 }
 .button-prev-img {
   width: 12rem !important;

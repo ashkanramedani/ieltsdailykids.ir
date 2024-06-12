@@ -141,7 +141,10 @@
         </div>
       </div>
       <div class="mt-5 position-relative mb-5">
-        <app-swiper></app-swiper>
+        <app-swiper [dynamicTemplate]="dynamicTemplate"></app-swiper>
+        <ng-template #dynamicTemplate let-data="data">
+          <app-item-shop></app-item-shop>
+        </ng-template>
       </div>
     </div>
   </div>

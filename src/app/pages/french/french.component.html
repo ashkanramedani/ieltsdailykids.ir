@@ -1,12 +1,12 @@
 <header>
   <div class="podcast-header">
     <div class="row h-100">
-      <div class="col-6">
+      <div class="col-6 mb-5">
         <div class="m-5 p-5 wrapper">
-          <h2 class="library mb-2">محصولات</h2>
+          <h2 class="library mb-2">فرانسه</h2>
           <p>
-            اگر شما هم‌ علاقه‌مند به پادکست ها هستید، پادکست های آکادمی‌ آیلتس
-            دیلی رو از دست ندهید.
+            کلاس های کودک و نوجوان فرانسوی با توجه به سن و سطح زبان آموزان برای
+            کودکان شش تا ده سال و نوجوانان برگزار می‌شود.
           </p>
         </div>
       </div>
@@ -20,7 +20,7 @@
           <img
             class="layer-1-icon"
             alt="book"
-            src="../../../assets/image/products/card.png"
+            src="../../../assets/library/layer-1@2x.png"
           />
           <img
             class="objects-icon2"
@@ -32,23 +32,18 @@
         <img
           class="book-reader-2"
           alt=""
-          src="../../../assets/image/products/base1.png"
+          src="../../../assets/library/book-reader--2@2x.png"
         />
         <div class="left">
           <img
             class="objects-icon3"
             alt="mini-cloud"
-            src="../../../assets/image/products/card-2.svg"
+            src="../../../assets/library/objects@2x.png"
           />
           <img
             class="podcast-header-item"
             alt=""
-            src="../../../assets/image/products/pacat.svg"
-          />
-          <img
-            class="objects-icon-left"
-            alt="mini-cloud"
-            src="../../../assets/library/objects@2x.png"
+            src="../../../assets/library/group-48095650@2x.png"
           />
         </div>
         <img
@@ -66,20 +61,19 @@
   </div>
 </header>
 <main>
-  <div class="container">
-    <div class="d-flex flex-column">
-      <app-filter-bar class="mt-2"></app-filter-bar>
-
-      <div class="mt-5 position-relative container-section-holder-boxs mb-5">
-        @for (item of number; track $index) {
-        <app-item-shop></app-item-shop>
-
-        }
-      </div>
+  <div class="container-fluid mt-5 pt-5 w-80">
+    <div class="d-flex justify-content-around">
+      <button class="btn btn-active w-30">کلاس‌های سطح A1</button>
+      <button class="btn btn-deactive w-30">کلاس‌های سطح A2</button>
+    </div>
+    <div class="containersection">
+      @for (item of number; track $index) {
+      <app-info-box-class></app-info-box-class>
+      }
     </div>
   </div>
 </main>
-<footer class="position-relative mt-5">
+<footer class="position-relative mt-2">
   <div class="w-100">
     <div class="logo-holder position-absolute d-flex flex-column">
       <img
