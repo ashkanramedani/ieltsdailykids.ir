@@ -1,0 +1,22 @@
+.accordion,h2,p{
+    font-family: var(--font-family-primary);
+
+}
+.accordion-body{
+p{
+    line-height: 30px;
+}
+}
+
+.accordion-button::after {
+    width: 21px;
+    margin-left: 7px;
+    background-image: var(--bs-accordion-icon);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-active-icon);
+}
+.accordion-button {
+    justify-content: end;
+}

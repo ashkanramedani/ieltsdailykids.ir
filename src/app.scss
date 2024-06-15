@@ -82,8 +82,14 @@
     z-index: #{$i};
   }
 }
+app-accordion{
+  width: 100%;
+}
 .color-primary {
   color: var(--primary);
+}
+.color-gray{
+  color: var(--gray);
 }
 .bg-primary {
   background-color: var(--primary);

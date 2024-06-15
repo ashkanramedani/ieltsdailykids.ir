@@ -6,6 +6,7 @@ import {
   CoursEnglishComponent,
   CoursFrenchComponent,
   FrenchComponent,
+  FrequentlyQuestionsComponent,
   LayoutComponent,
   LibraryComponent,
   PlacementComponent,
@@ -24,6 +25,7 @@ const routes: Routes = [
   { component: FrenchComponent, path: 'french' },
   { component: ClassPageComponent, path: 'class' },
   { component: PlacementComponent, path: 'placement' },
+  { component: FrequentlyQuestionsComponent, path: 'questions' },
   {
     component: LayoutComponent,
     path: 'products',

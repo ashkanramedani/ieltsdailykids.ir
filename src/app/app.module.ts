@@ -25,6 +25,7 @@ import {
   CoursEnglishComponent,
   CoursFrenchComponent,
   FrenchComponent,
+  FrequentlyQuestionsComponent,
   LayoutComponent,
   PlacementComponent,
   ProductsComponent,
@@ -46,6 +47,7 @@ import {
     FrenchComponent,
     ClassPageComponent,
     PlacementComponent,
+    FrequentlyQuestionsComponent,
     LayoutComponent,
   ],
   imports: [

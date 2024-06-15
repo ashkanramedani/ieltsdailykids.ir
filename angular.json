@@ -53,6 +53,8 @@
               "jalali-moment"
             ],
             "scripts": [
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/swiper/swiper-element-bundle.min.js"
             ],
             "server": "src/main.server.ts",
