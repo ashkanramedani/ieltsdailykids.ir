@@ -32,6 +32,7 @@ import {
   ProductsDetailsComponent,
   WorkShopComponent,
 } from './pages';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import {
     PlacementComponent,
     FrequentlyQuestionsComponent,
     LayoutComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

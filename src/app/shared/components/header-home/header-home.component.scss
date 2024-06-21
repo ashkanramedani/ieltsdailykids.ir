@@ -1,0 +1,217 @@
+@import "../../../../themes.scss";
+
+.hero-header {
+  height: 100vh; /* 100% of the viewport height */
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  // background: url('/assets/your-background-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  background: rgb(40, 85, 174);
+  background: linear-gradient(
+    31deg,
+    rgba(40, 85, 174, 1) 0%,
+    rgba(114, 146, 207, 1) 100%
+  );
+  .wawe_top {
+    height: 100vh;
+    background-size: cover; /* عکس به طور کامل دایو را پر می‌کند */
+    background-position: center; /* عکس در وسط دایو قرار می‌گیرد */
+    background-repeat: no-repeat; /* جلوگیری از تکرار عکس */
+    position: absolute;
+    object-fit: fill;
+    background-image: url("../../../../assets/image/home/wawe_top.png");
+    top: 0;
+    right: 0;
+    width: 55rem;
+    .title {
+      position: absolute;
+      left: 13rem;
+      top: 14rem;
+      color: #fff;
+      font-family: var(--font-family-primary);
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .sub-title {
+      position: absolute;
+      left: 5%;
+      top: 18rem;
+      color: #fff;
+      font-family: var(--font-family-javan);
+      font-weight: bold;
+      line-height: 5rem;
+      font-size: 53px;
+      text-wrap: wrap;
+      width: 26rem;
+    }
+  }
+
+  .cloud-bottom {
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+  }
+}
+
+.hero-content {
+  max-width: 80%;
+  margin: auto;
+  font-family: var(--font-family-primary);
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px white; /* Increased shadow for more glow */
+  animation: twinkle 2s infinite alternate;
+}
+
+.star.large {
+  width: 8px;
+  height: 8px;
+  box-shadow: 0 0 30px 10px white; /* Larger shadow for bigger stars */
+}
+.cloud-bottom {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 29rem;
+  background: url(/assets/image/home/cloud-bottom.png) no-repeat center center /
+    cover;
+  transform: translateX(-50%);
+  animation: moveCloud 5s ease-in-out infinite alternate;
+}
+.kahooo {
+  position: absolute;
+  left: 30%;
+  bottom: 6rem;
+  width: 27rem;
+  height: 29rem;
+  background: url(/assets/image/home/kahooo.png) no-repeat center center / cover;
+  transform: translateX(-50%);
+  animation: moveCloud 2s ease-in-out infinite alternate;
+}
+.pencel {
+  position: absolute;
+  left: 16%;
+  bottom: 13rem;
+  width: 17rem;
+  height: 8rem;
+  background: url(/assets/image/home/pen.png) no-repeat center center / cover;
+  transform: translateX(-50%);
+  animation: moveCloud 1s ease-in-out infinite alternate;
+}
+.flas {
+  position: absolute;
+  left: 16%;
+  top: 13rem;
+  width: 11rem;
+  height: 6rem;
+  background: url(/assets/image/home/flash.png) no-repeat center center / cover;
+  transform: translateX(-50%);
+  animation: moveCloud 0.5s ease-in-out infinite alternate;
+}
+.cloud-left {
+  position: absolute;
+  left: 9%;
+  top: 23rem;
+  width: 18rem;
+  height: 8rem;
+  background: url(/assets/image/home/clooud.png) no-repeat center center / cover;
+  transform: translateX(-50%);
+  animation: moveCloud 1s ease-in-out infinite alternate;
+}
+.saturn {
+  position: absolute;
+  left: 30%;
+  top: 12rem;
+  width: 100px;
+  height: 100px;
+  background: url(/assets/image/home/saturn.png) no-repeat center center / cover;
+  transform: translateX(-50%) translateY(-50%); /* Center the Saturn horizontally and vertically */
+  animation: rotateSaturn 10s linear infinite;
+}
+
+.planet {
+  position: absolute;
+  left: 7%;
+  top: 12rem;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  animation: rotatePlanet 10s linear infinite;
+}
+
+.ring {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Adjust size relative to planet */
+  height: 5px; /* Adjust size as needed */
+  background: url(/assets/image/home/rang.png) no-repeat center center/contain;
+  animation: rotateRing 10s linear infinite;
+}
+
+@keyframes rotatePlanet {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotateRing {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+//سstart
+@keyframes twinkle {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//cloud
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-50%) translateX(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateX(10px);
+  }
+}
+
+//saturn
+@keyframes rotateSaturn {
+  from {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}

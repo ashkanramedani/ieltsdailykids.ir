@@ -40,6 +40,7 @@ import { InfoBoxClassComponent } from './components/info-box-class/info-box-clas
 import { BoxImgPlyComponent } from './components/box-img-ply/box-img-ply.component';
 import { ItemShopComponent } from './components/item-shop/item-shop.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { HeaderHomeComponent } from './components/header-home/header-home.component';
 // import * as _templates from './components/templates';
 // import * as _organisms from './components/organisms';
 
@@ -52,6 +53,7 @@ const component = [
   BoxImgPlyComponent,
   ItemShopComponent,
   AccordionComponent,
+  HeaderHomeComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,

@@ -14,9 +14,10 @@ import {
   ProductsDetailsComponent,
   WorkShopComponent,
 } from './pages';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'products', pathMatch: 'prefix' },
+  { path: '', redirectTo: 'home', pathMatch: 'prefix' },
   { component: LibraryComponent, path: 'library' },
   { component: WorkShopComponent, path: 'work-shop' },
   { component: CoursComponent, path: 'cours' },
@@ -40,6 +41,7 @@ const routes: Routes = [
       },
     ],
   },
+  { component: HomeComponent, path: 'home' },
 ];
 
 @NgModule({
