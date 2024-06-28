@@ -18,7 +18,7 @@ import {
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'prefix' },
+  { path: '', redirectTo: 'registration', pathMatch: 'prefix' },
   { component: LibraryComponent, path: 'library' },
   { component: WorkShopComponent, path: 'work-shop' },
   { component: CoursComponent, path: 'cours' },
