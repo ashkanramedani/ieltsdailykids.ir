@@ -31,7 +31,8 @@ import {
   ProductsComponent,
   ProductsDetailsComponent,
   WorkShopComponent,
-  HomeComponent
+  HomeComponent,
+  RegistrationComponent,
 } from './pages';
 
 @NgModule({
@@ -51,6 +52,7 @@ import {
     FrequentlyQuestionsComponent,
     LayoutComponent,
     HomeComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

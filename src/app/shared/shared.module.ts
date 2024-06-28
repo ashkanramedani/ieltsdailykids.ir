@@ -32,7 +32,13 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxMaskModule } from 'ngx-mask';
 import * as kiComponent from './ki-components';
 import { NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
-import { CustomHeaderComponent, PinCodeComponent } from './components';
+import { DatePickerModule } from './date-picker.module';
+
+import {
+  CustomHeaderComponent,
+  ItemNewsComponent,
+  PinCodeComponent,
+} from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 import { SwiperComponent } from './components/swiper/swiper.component';
@@ -54,6 +60,7 @@ const component = [
   ItemShopComponent,
   AccordionComponent,
   HeaderHomeComponent,
+  ItemNewsComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,
@@ -90,6 +97,7 @@ const component = [
     NbCardModule,
     NbButtonModule,
     NbActionsModule,
+    DatePickerModule,
     NbUserModule,
     NbCheckboxModule,
     NbRadioModule,
@@ -117,6 +125,7 @@ const component = [
     NbInputModule,
     NbCardModule,
     NbButtonModule,
+    DatePickerModule,
     NbActionsModule,
     NbUserModule,
     NbCheckboxModule,

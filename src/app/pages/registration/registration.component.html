@@ -1,0 +1,55 @@
+<div class="d-flex justify-content-around p-5">
+  <div class="frm w-25">
+    <div class="d-flex flex-column">
+      <form>
+        <ki-form-group
+          class="w-70"
+          [label]="'نام و نام خانوادگی '"
+          [showRequireSign]="true"
+        >
+          <ki-input name="name" [fullWidth]="true" required></ki-input>
+        </ki-form-group>
+        <ki-form-group
+          class="w-70"
+          [label]="'تلفن همراه'"
+          [showRequireSign]="true"
+        >
+          <ki-input
+            name="name"
+            [type]="'phone'"
+            [fullWidth]="true"
+            required
+          ></ki-input>
+        </ki-form-group>
+        <ki-form-group
+          class="col-4"
+          [label]="'گروه سنی'"
+          [showRequireSign]="false"
+        >
+          <ki-select
+            [options]="ageOptions"
+            [placeholder]="'گروه سنی خود را انتخاب کنید'"
+            [allowClear]="true"
+          ></ki-select>
+        </ki-form-group>
+        <ki-form-group
+          class="col-4"
+          [label]="'متقاضی شرکت در کدام زبان هستید؟'"
+          [showRequireSign]="false"
+        >
+          <ki-select
+            [options]="ageOptions"
+            [placeholder]="'انتخاب زبان'"
+            [allowClear]="true"
+          ></ki-select>
+        </ki-form-group>
+        <ki-form-group [label]="'انتخاب تاریخ آزمون'" [showRequireSign]="true">
+          <ki-date-picker name="adjDate" required></ki-date-picker>
+        </ki-form-group>
+      </form>
+    </div>
+  </div>
+  <div class="w-50 bg-bac">
+    <img src="../../../assets/image/register.png" alt="" />
+  </div>
+</div>

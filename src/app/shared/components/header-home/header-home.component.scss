@@ -116,7 +116,7 @@
 }
 .flas {
   position: absolute;
-  left: 16%;
+  left: 23%;
   top: 13rem;
   width: 11rem;
   height: 6rem;
@@ -154,7 +154,8 @@
   transform: translate(-50%, -50%);
   width: 200px; /* Adjust size as needed */
   height: 200px; /* Adjust size as needed */
-  animation: scaleAnimation 2s infinite;}
+  animation: scaleAnimation 2s infinite;
+}
 
 .ring {
   position: absolute;
@@ -217,12 +218,12 @@
 
 @keyframes scaleAnimation {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }

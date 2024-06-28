@@ -10,4 +10,5 @@ export * from './french/french.component';
 export * from './class-page/class-page.component';
 export * from './placement/placement.component';
 export * from './frequently-questions/frequently-questions.component';
-export * from './home/home.component'
+export * from './home/home.component';
+export * from './registration/registration.component';

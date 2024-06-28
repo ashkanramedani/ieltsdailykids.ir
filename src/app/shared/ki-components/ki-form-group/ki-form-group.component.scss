@@ -19,10 +19,10 @@ $name: "form-group";
 
   &--align-center {
     align-items: center;
-    font-family: nb-theme(font-family-primary);
+    font-family: nb-theme(font-family-primary) !important;
     .#{$name}__label {
       margin: 0 !important;
-      font-family: nb-theme(font-family-primary);
+      font-family: var(--font-family-primary) !important;
     }
   }
 

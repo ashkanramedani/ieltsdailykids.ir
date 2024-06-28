@@ -12,6 +12,7 @@ import {
   PlacementComponent,
   ProductsComponent,
   ProductsDetailsComponent,
+  RegistrationComponent,
   WorkShopComponent,
 } from './pages';
 import { HomeComponent } from './pages/home/home.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   { component: ClassPageComponent, path: 'class' },
   { component: PlacementComponent, path: 'placement' },
   { component: FrequentlyQuestionsComponent, path: 'questions' },
+  { component: RegistrationComponent, path: 'registration' },
   {
     component: LayoutComponent,
     path: 'products',

@@ -5,21 +5,21 @@ import {
   Input,
   OnInit,
   Output,
-} from "@angular/core";
+} from '@angular/core';
 import {
   AbstractControl,
   ControlValueAccessor,
   NG_VALIDATORS,
   NG_VALUE_ACCESSOR,
   ValidationErrors,
-} from "@angular/forms";
-import { NgbCalendar, NgbDate } from "@ng-bootstrap/ng-bootstrap";
-import { SizeType } from "../../types/size.type";
+} from '@angular/forms';
+import { NgbCalendar, NgbDate } from '@ng-bootstrap/ng-bootstrap';
+import { SizeType } from '../../types/size.type';
 
 @Component({
-  selector: "ki-date-picker",
-  templateUrl: "./ki-date-picker.component.html",
-  styleUrls: ["./ki-date-picker.component.scss"],
+  selector: 'ki-date-picker',
+  templateUrl: './ki-date-picker.component.html',
+  styleUrls: ['./ki-date-picker.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -38,13 +38,13 @@ export class KiDatePickerComponent implements OnInit, ControlValueAccessor {
   @Input() disabled: boolean = false;
   @Input() disableFooter: boolean = true;
   @Input() hideDatepickerIcon: boolean = false;
-  @Input() placement?: "top" | "bottom" | "left" | "right" | "auto" = "auto";
-  @Input() state?: "error" | "success" | "";
+  @Input() placement?: 'top' | 'bottom' | 'left' | 'right' | 'auto' = 'auto';
+  @Input() state?: 'error' | 'success' | '';
   @Input() size?: SizeType;
   @Input() readonly?: string;
   @Input() placeholder?: string;
-  @Input() minDate = { year: 1940, month: 1, day: 1 };
-  @Input() maxDate = { year: 2100, month: 1, day: 1 };
+  @Input() minDate = { year: 1340, month: 1, day: 1 };
+  @Input() maxDate = { year: 1500, month: 1, day: 1 };
 
   @Output() onDateSelectCallback: EventEmitter<any> = new EventEmitter();
 
@@ -56,7 +56,7 @@ export class KiDatePickerComponent implements OnInit, ControlValueAccessor {
   onTouched: any = () => {};
   onValidationChange: any = () => {};
 
-  @Input("value") _value: NgbDate;
+  @Input('value') _value: NgbDate;
 
   get value() {
     return this._value;
@@ -109,12 +109,12 @@ export class KiDatePickerComponent implements OnInit, ControlValueAccessor {
   }
   validate(control: AbstractControl): ValidationErrors {
     let isInvalid = true;
-    if (typeof this._value === "string") {
+    if (typeof this._value === 'string') {
       isInvalid = !this.isValidDate(this._value);
     } else {
       isInvalid = this._value && !this.calendar.isValid(this._value);
     }
-    isInvalid ? (this.state = "error") : (this.state = "");
+    isInvalid ? (this.state = 'error') : (this.state = '');
     return isInvalid ? { invalidDate: isInvalid } : null;
   }
   registerOnValidatorChange?(fn: () => void): void {
@@ -138,7 +138,7 @@ export class KiDatePickerComponent implements OnInit, ControlValueAccessor {
   }
 
   onDateChanged(date) {
-    if (typeof date === "string") {
+    if (typeof date === 'string') {
       if (this.isValidDate(date)) {
         let dateTemp = new Date(date);
         date = {

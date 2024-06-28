@@ -30,6 +30,7 @@ export class CustomHeaderComponent implements OnInit {
     { title: 'class', link: 'class' },
     { title: 'placement', link: 'placement' },
     { title: 'questions', link: 'questions' },
+    { title: 'registration', link: 'registration' },
   ];
   themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
   //   private authService: NbAuthService,

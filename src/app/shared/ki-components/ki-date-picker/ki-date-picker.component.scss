@@ -5,7 +5,7 @@ $name: "date-picker";
   display: flex;
   position: relative;
   &__element {
-    background-color: $form-element-background-color;
+    background-color: $background;
     color: $form-element-color;
     border: 1px solid $form-element-border-color;
     box-shadow: $form-element-shadow;

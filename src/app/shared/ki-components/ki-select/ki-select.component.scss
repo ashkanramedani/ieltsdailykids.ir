@@ -6,12 +6,12 @@ $name: "select-control";
   display: block;
   .ng-select {
     .ng-select-container {
-      background-color: $form-element-background-color;
+      background-color: $background;
       color: $form-element-color;
       border: 1px solid $form-element-border-color;
       box-shadow: $form-element-shadow;
       font-size: $form-element-font-size--normal;
-      font-family: nb-theme(font-family-secondary);
+      font-family: nb-theme(font-family-primary);
       min-height: $form-element-size--normal;
       border-radius: $form-element-border-radius--normal;
       padding: $spacing-x2 $spacing-x3;
@@ -39,7 +39,7 @@ $name: "select-control";
     .ng-input {
       padding-left: 0 !important;
       padding-bottom: 0 !important;
-      font-family: nb-theme(font-family-secondary);
+      font-family: nb-theme(font-family-primary);
     }
 
     .ng-arrow-wrapper {
@@ -79,7 +79,7 @@ $name: "select-control";
         top: 50% !important;
         transform: translateY(-50%) !important;
         left: $spacing-x3 !important;
-        font-family: nb-theme(font-family-secondary);
+        font-family: nb-theme(font-family-primary);
       }
       .ng-select-container {
         height: $form-element-size--normal;

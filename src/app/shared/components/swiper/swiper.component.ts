@@ -1,6 +1,11 @@
-import { AfterViewInit, Component, Input, TemplateRef } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  Input,
+  TemplateRef,
+  input,
+} from '@angular/core';
 import Swiper from 'swiper';
-import { register } from 'swiper/element/bundle';
 import { Navigation } from 'swiper/modules';
 import { SwiperOptions } from 'swiper/types';
 @Component({
@@ -11,22 +16,21 @@ import { SwiperOptions } from 'swiper/types';
 export class SwiperComponent implements AfterViewInit {
   swiperEl: any;
   @Input() public dynamicTemplate: TemplateRef<any>;
-  constructor() {
-    register();
-  }
+  @Input() id: string = 'swiper_review';
+  constructor() {}
   ngAfterViewInit(): void {
     this.initialize();
   }
   initialize() {
     setTimeout(() => {
       // swiper element
-      this.swiperEl = document.getElementById('swiper_review');
+      this.swiperEl = document.getElementById(this.id);
       const swiperParams: SwiperOptions = {
         modules: [Navigation],
         zoom: true,
         autoHeight: true,
         direction: 'horizontal',
-        slidesPerView: 5,
+        slidesPerView: 4,
         loop: false,
         breakpoints: {
           640: {
@@ -36,6 +40,7 @@ export class SwiperComponent implements AfterViewInit {
             slidesPerView: 3,
           },
         },
+
         spaceBetween: 40,
         // navigation: true,
         navigation: {
@@ -43,16 +48,11 @@ export class SwiperComponent implements AfterViewInit {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        freeMode: {
-          enabled: true,
-          minimumVelocity: 100,
-        },
-        grid: {
-          fill: 'row',
-          rows: 1,
-        },
+        freeMode: true,
         on: {
-          slideChange: (row) => {},
+          slideChange: (row) => {
+            console.log('slideChange' + this.id);
+          },
         },
       };
 

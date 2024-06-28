@@ -1,4 +1,4 @@
-<swiper-container id="swiper_review" class="mySwiper" init="false">
+<swiper-container [id]="id" class="mySwiper" init="false">
   <!-- <div class="container-section-holder-boxs"> -->
   @for (item of number; track $index) {
   <swiper-slide>
@@ -8,8 +8,6 @@
     ></ng-container>
   </swiper-slide>
   }
-
-  <!-- </div> -->
 </swiper-container>
 <div class="swiper-button-prev">
   <img
