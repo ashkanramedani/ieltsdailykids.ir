@@ -1,3 +1,84 @@
-<app-header-home></app-header-home>
+<main>
+  <app-header-home></app-header-home>
+  <div class="herself">
+    <h2 class="title">خدمات</h2>
+    <div class="d-flex justify-content-between px-5 mt-5">
+      <div class="d-flex flex-column holder-item first-item position-relative">
+        <div class="holder-image">
+          <img src="/assets/image/home/item.png" class="image-1" />
+          <div class="image-2"></div>
+        </div>
+        <div class="d-flex flex-column p-4 parent">
+          <strong class="f-30 font-bold mt-4 text-center">کلاس‌ها</strong>
+          <span class="f-17 mt-3 text-center">انگلیسی - فرانسه- ترکی</span>
+          <span class="f-14 mt-3 text-center">بیشتر بدانید</span>
+          <div class="bean"></div>
+        </div>
+      </div>
+      <div class="d-flex flex-column holder-item">
+        <div class="holder-image">
+          <img src="/assets/image/home/item-1.png" class="image-1" />
+          <div class="image-2"></div>
+        </div>
+        <div class="d-flex flex-column p-4 parent">
+          <strong class="f-30 font-bold mt-4 text-center">تعیین سطح</strong>
+          <span class="f-17 mt-3 text-center">انگلیسی - فرانسه- ترکی</span>
+          <span class="f-14 mt-3 text-center">بیشتر بدانید</span>
+          <div class="bean"></div>
+        </div>
+      </div>
+      <div class="d-flex flex-column holder-item last-item position-relative">
+        <div class="holder-image">
+          <img src="/assets/image/home/item-2.png" class="image-1" />
+          <div class="image-2"></div>
+        </div>
+        <div class="d-flex flex-column p-4 parent">
+          <strong class="f-30 font-bold mt-4 text-center">کارگاه</strong>
+          <span class="f-17 mt-3 text-center">انگلیسی - فرانسه- ترکی</span>
+          <span class="f-14 mt-3 text-center">بیشتر بدانید</span>
+          <div class="bean"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mt-5 position-relative mb-5">
+      <h5 class="text-end font-family-javan">فروشگاه</h5>
+      <app-swiper [dynamicTemplate]="dynamicTemplate"></app-swiper>
+      <ng-template #dynamicTemplate let-data="data">
+        <app-item-shop></app-item-shop>
+      </ng-template>
+      <!-- </div> -->
+    </div>
+  </div>
 
-<p>home works!</p>
+  <div class="mt-5 position-relative mb-5">
+    <div class="d-flex holder-padcast justify-content-between p-5">
+      <div class="position-relative fraem">
+        <div class="d-flex flex-column">
+          <h5 class="f-40 font-family-javan pe-5 text-end">پادکست</h5>
+          <p class="f-16 font-bold font-primary me-5 mt-4">
+            اگر شما هم‌ علاقه‌مند به پادکست ها هستید، پادکست های آکادمی‌ آیلتس
+            دیلی رو از دست ندهید.
+          </p>
+          <button class="button me-5">
+            <i class="fa-solid fa-eye" style="color: white"></i>
+            <span class="buy me-3">مشاهده</span>
+          </button>
+        </div>
+        <img
+          class="podcast"
+          src="../../../assets/image/home/podcast.png"
+          alt=""
+        />
+      </div>
+   
+        <div class="holder-image-p">
+          <img src="/assets/image/home/p.png" class="image-main-p" />
+          <div class="image-p"></div>
+      </div>
+    </div>
+
+    <!-- </div> -->
+  </div>
+</main>

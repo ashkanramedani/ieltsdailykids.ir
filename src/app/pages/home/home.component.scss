@@ -1,0 +1,229 @@
+@import "../../../themes";
+main{
+    margin: auto;
+    font-family: var(--font-family-primary);
+}
+
+.herself{
+    background-color: white;
+    width: 100%;
+    height: 40rem;
+    .title {
+        font-family: var(--font-family-javan);
+        font-weight: bold;
+        line-height: 5rem;
+        font-size: 53px;
+        text-wrap: wrap;
+        text-align: center;
+        position: relative;
+      }
+.holder-image{
+    position: relative;
+    display: inline-block;
+    .image-1{
+        position: relative;
+    z-index: 1;
+        width: 31rem;
+        height: 23rem;
+        object-fit: contain;
+      }
+}
+  
+}
+
+.parent {
+    position: relative;
+    display: inline-block;
+}
+
+.bean {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 300px;
+    height: 150px;
+    transition: opacity 0.5s, transform 0.5s;
+    background: url(/assets/image/home/shadow.png) no-repeat center center / cover;
+    opacity:0;
+
+}
+
+.image-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 37rem;
+    height: 29rem;
+    transition: opacity 0.5s, transform 0.5s;
+    background: url(/assets/image/home/shadow-top.png) no-repeat center center / cover;
+    opacity:0;
+
+}
+
+.image-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 37rem;
+    height: 29rem;
+    transition: opacity 0.5s, transform 0.5s;
+    background: url(/assets/image/home/p-z.png) no-repeat center center / cover;
+
+
+}
+
+.holder-item:hover .image-2 {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 0;
+}
+
+
+.holder-item:hover  .bean {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 0;
+}
+
+.parent strong,
+.parent span {
+    position: relative;
+    z-index: 1;
+}
+.holder-image-p::before{
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 79px;
+    height: 56px;
+    right: 0%;
+    top: 75%;
+    background-image: url(../../../assets/image/home/bolet.png);
+    animation: moveRight 5s linear infinite;
+}
+.fraem::after{
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 98px;
+    height: 254px;
+    right: 0;
+    top: 11px;
+    background-image: url(../../../assets/image/home/Frame.png);
+}
+.holder-image-p::after{
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 140px;
+    height: 86px;
+    left: -5%;
+    top: -6%;
+    background-image: url(../../../assets/image/home/peper.png);
+}
+.first-item::before{
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    right: 0%;
+    top: 75%;
+    background-image: url(../../../assets/image/home/goli.png);
+    animation: rotateSaturn 10s linear infinite;
+}
+.last-item::before{
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    right: 0%;
+    top: 75%;
+    background-image: url(../../../assets/image/home/goli.png);
+    animation: rotateSaturn 10s linear infinite;
+}
+.title::before {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    right: 56%;
+    top: 0;
+    background-image: url(../../../assets/image/home/goli.png);
+    animation: rotateSaturn 10s linear infinite;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    background-color: #019da4;
+    border-radius: 10px;
+    width: 8rem;
+    .buy {
+      color: white;
+    }
+  }
+
+  .holder-padcast{
+    height: 20rem;
+    background-color: white;
+    h5{
+        font-size: 3rem;
+    }
+    p{
+        line-height: 29px;
+        width: 23rem;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+    .podcast{
+        object-fit: contain;
+        width: 15rem;
+        position: absolute;
+        top: 1rem;
+    }
+  }
+  .holder-image-p{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .image-main-p{
+        position: relative;
+        z-index: 1;
+        width: 30rem;
+        height: 16rem;
+        object-fit: contain;
+      }
+  }
+@keyframes rotateSaturn {
+    from {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+
+  @keyframes moveRight {
+    0% {
+        right: 200px;
+    }
+    100% {
+      right:0px;
+    }
+  }

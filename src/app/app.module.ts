@@ -31,8 +31,8 @@ import {
   ProductsComponent,
   ProductsDetailsComponent,
   WorkShopComponent,
+  HomeComponent
 } from './pages';
-import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
