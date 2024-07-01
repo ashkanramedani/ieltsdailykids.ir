@@ -1,0 +1,120 @@
+<header>
+  <div class="podcast-header">
+    <div class="row h-100">
+      <div class="col-6 mb-5">
+        <div class="m-5 p-5 wrapper">
+          <h2 class="library mb-2">پادکست</h2>
+          <p>
+            اگر شما هم‌ علاقه‌مند به پادکست ها هستید، پادکست های آکادمی‌ آیلتس
+            دیلی رو از دست ندهید
+          </p>
+        </div>
+      </div>
+      <div class="col-6 position-relative p-5">
+        <div class="right">
+          <img
+            class="objects-icon1"
+            alt="mini-cloud"
+            src="../../../assets/image/padcast/union@2x.png"
+          />
+          <img
+            class="layer-1-icon"
+            alt="book"
+            src="../../../assets/image/padcast/frame@2x.png"
+          />
+          <img
+            class="objects-icon2"
+            alt="mini-cloud-2"
+            src="../../../assets/image/padcast/objects@2x.png"
+          />
+          <img
+            class="microfon"
+            alt="mini-cloud-2"
+            src="../../../assets/image/padcast/microfon.png"
+          />
+        </div>
+
+        <img
+          class="book-reader-2"
+          alt=""
+          src="../../../assets/image/padcast/podcastx.png"
+        />
+        <div class="left">
+          <img
+            class="objects-icon3"
+            alt="mini-cloud"
+            src="../../../assets/image/padcast/group.png"
+          />
+          <img
+            class="podcast-header-item"
+            alt=""
+            src="../../../assets/library/objects@2x.png"
+          />
+          <img
+            class="vector"
+            alt=""
+            src="../../../assets/image/padcast/Vector.png"
+          />
+        </div>
+      </div>
+    </div>
+    <img
+      class="union-icon"
+      alt="moving cloud"
+      src="../../../assets/image/padcast/union.svg"
+    />
+  </div>
+</header>
+<main>
+  <section class="podcast-card-parent px-5">
+    @for (item of number; track $index) {
+    <app-padcast-item></app-padcast-item>
+    }
+  </section>
+</main>
+<footer class="position-relative mt-2">
+  <div class="w-100">
+    <div class="logo-holder position-absolute d-flex flex-column">
+      <img
+        class="logo-footer"
+        src="/assets/image/footer/kids-logo-copy-1@2x.png"
+        alt="logo"
+      />
+      <strong>
+        <img width="25" src="/assets/image/footer/calling.svg" alt="calling" />
+        تلفن های آکادمی
+      </strong>
+      <span class="tel-number"> ۰۵۱-۳۷۶۳۷۵۲۶ </span>
+      <span class="tel-number"> ۰۵۱-۳۷۶۶۹۲۹۵ </span>
+      <strong>
+        <img width="25" src="/assets/image/footer/location.png" alt="calling" />
+        آدرس
+      </strong>
+      <span> مشهد - بلوار فلسطین - فلسطین ۱۰ - پلاک ۳۴ </span>
+    </div>
+    <div class="link-holder position-absolute d-flex flex-column">
+      <strong> لینک های مفید </strong>
+      <span> سوال‌های متداول </span>
+      <span>خدمات</span>
+      <span>اخبار</span>
+      <span>تیم ما</span>
+    </div>
+    <div class="social-network position-absolute d-flex flex-column">
+      <strong> با ما در تماس باشید </strong>
+      <span>
+        <img width="25" src="/assets/image/footer/heart.svg" alt="calling" />
+        شبکه های اجتماعی
+      </span>
+      <div class="d-flex justify-content-between">
+        <img width="40" src="/assets/image/footer/whatsap.svg" alt="whatsap" />
+        <img
+          width="40"
+          src="/assets/image/footer/telegram.svg"
+          alt="telegram"
+        />
+        <img width="40" src="/assets/image/footer/insta.svg" alt="instagram" />
+        <img width="40" src="/assets/image/footer/in.svg" alt="in" />
+      </div>
+    </div>
+  </div>
+</footer>

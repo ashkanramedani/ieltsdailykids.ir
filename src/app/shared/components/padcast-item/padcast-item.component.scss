@@ -1,0 +1,83 @@
+@import "../../../../themes.scss";
+.podcast-card-child {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.frame-group,
+.frame-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.podcast-card:hover .podcast-card-item {
+  display: block;
+}
+.fa-heart {
+  color: #ff002e;
+}
+.podcast-card {
+  cursor: pointer;
+  position: relative;
+  width: 24.375rem;
+  position: relative;
+  box-shadow: 0 4px 25px rgba(114, 146, 207, 0.5);
+  border-radius: var(--br-31xl);
+  height: 24.375rem;
+}
+.podcast-card-item {
+  width: 100%;
+  display: none;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  border-radius: var(--br-31xl);
+}
+.frame-parent {
+  position: absolute;
+  height: 8.36%;
+  width: 83.64%;
+  top: 4.74%;
+  right: 8%;
+  bottom: 86.9%;
+  left: 8.36%;
+  justify-content: space-between;
+  .name-podcast-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-7xs);
+    .name-podcast,
+    .name-podcast {
+      position: relative;
+    }
+  }
+  .frame-group {
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    .eye-parent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: var(--gap-5xs);
+      .name-podcast {
+        position: relative;
+      }
+    }
+  }
+}
+.podcast-ply {
+  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6rem;
+}

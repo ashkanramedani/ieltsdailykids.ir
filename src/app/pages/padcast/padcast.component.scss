@@ -1,0 +1,171 @@
+@import "../../../themes";
+main {
+  margin: auto;
+  font-family: var(--font-family-primary);
+}
+
+.podcast-header {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #ffc760;
+  text-align: right;
+}
+h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #19313a;
+  line-height: 41px;
+  width: 42rem;
+}
+.wrapper {
+  .library {
+    text-align: right;
+    color: #fff;
+    font-family: var(--font-family-javan);
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+  }
+  p {
+    font-family: var(--font-family-secondary);
+    line-height: 32px;
+    text-align: justify;
+    color: white;
+  }
+}
+main {
+  direction: ltr;
+}
+
+.union-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.objects-icon1 {
+  position: absolute;
+  width: 3rem;
+  right: 31rem;
+  object-fit: contain;
+  top: 13px;
+}
+
+.podcast-header-item {
+  position: absolute;
+  width: 4rem;
+  object-fit: contain;
+  left: 17rem;
+  top: 11rem;
+}
+.objects-icon3 {
+  position: absolute;
+  width: 10rem;
+  object-fit: contain;
+  left: 10rem;
+  top: 6rem;
+}
+.vector {
+  position: absolute;
+  width: 2rem;
+  object-fit: contain;
+  left: 16rem;
+  bottom: 6rem;
+}
+.podcast-header-item {
+  top: 2rem;
+}
+.objects-icon2 {
+  position: absolute;
+  width: 3rem;
+  right: 20rem;
+  top: 8rem;
+  object-fit: contain;
+}
+.microfon {
+  position: absolute;
+  width: 10rem;
+  right: 20rem;
+  bottom: 1rem;
+  object-fit: contain;
+  z-index: 234;
+}
+.layer-1-icon {
+  object-fit: contain;
+  width: 8rem;
+  position: absolute;
+  right: 19rem;
+  top: 0;
+}
+.book-reader-2 {
+  height: 80%;
+  top: 9.8%;
+  right: 35.84%;
+  object-fit: contain;
+  position: absolute;
+  width: 24rem;
+  z-index: 144;
+}
+.vector-icon {
+  position: absolute;
+  height: 35%;
+  top: 48.4%;
+  left: 18.21%;
+  max-height: 100%;
+  object-fit: cover;
+}
+///
+///
+
+.podcast-card-parent {
+  gap: var(--gap-5xl);
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.875rem 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--bold-size);
+  color: var(--color-white);
+  font-family: var(--font-family-iran);
+  border-radius: var(--br-31xl);
+}
+
+//
+
+footer {
+  width: 100%;
+  position: relative;
+  height: 30rem;
+  text-align: right;
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: var(--font-family-primary);
+  background: url(../../../assets/image/footer/footer.svg);
+  object-fit: cover;
+  .logo-holder {
+    line-height: 43px;
+    top: 9rem;
+    right: 14rem;
+    img.logo-footer {
+      width: 9rem;
+    }
+  }
+  .link-holder {
+    line-height: 43px;
+    top: 13rem;
+    right: 52rem;
+  }
+  .social-network {
+    line-height: 43px;
+    top: 13rem;
+    left: 14rem;
+  }
+}

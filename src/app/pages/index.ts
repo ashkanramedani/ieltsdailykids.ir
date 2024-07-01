@@ -12,3 +12,5 @@ export * from './placement/placement.component';
 export * from './frequently-questions/frequently-questions.component';
 export * from './home/home.component';
 export * from './registration/registration.component';
+export * from './padcast/padcast.component';
+export * from './padcast/padcast-details/padcast-details.component';

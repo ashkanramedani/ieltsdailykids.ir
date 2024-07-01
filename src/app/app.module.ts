@@ -33,10 +33,13 @@ import {
   WorkShopComponent,
   HomeComponent,
   RegistrationComponent,
+  padcastComponent,
+  padcastDetailsComponent,
 } from './pages';
 
 @NgModule({
   declarations: [
+    padcastComponent,
     AppComponent,
     WorkShopComponent,
     LibraryComponent,
@@ -53,6 +56,7 @@ import {
     LayoutComponent,
     HomeComponent,
     RegistrationComponent,
+    padcastDetailsComponent,
   ],
   imports: [
     BrowserModule,

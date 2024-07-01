@@ -37,6 +37,7 @@ import { DatePickerModule } from './date-picker.module';
 import {
   CustomHeaderComponent,
   ItemNewsComponent,
+  PadcastItemComponent,
   PinCodeComponent,
 } from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
@@ -61,6 +62,7 @@ const component = [
   AccordionComponent,
   HeaderHomeComponent,
   ItemNewsComponent,
+  PadcastItemComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,

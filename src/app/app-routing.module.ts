@@ -14,11 +14,12 @@ import {
   ProductsDetailsComponent,
   RegistrationComponent,
   WorkShopComponent,
+  padcastComponent,
 } from './pages';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'registration', pathMatch: 'prefix' },
+  { path: '', redirectTo: 'padcast', pathMatch: 'prefix' },
   { component: LibraryComponent, path: 'library' },
   { component: WorkShopComponent, path: 'work-shop' },
   { component: CoursComponent, path: 'cours' },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { component: ClassPageComponent, path: 'class' },
   { component: PlacementComponent, path: 'placement' },
   { component: FrequentlyQuestionsComponent, path: 'questions' },
+  { component: padcastComponent, path: 'padcast' },
   { component: RegistrationComponent, path: 'registration' },
   {
     component: LayoutComponent,
