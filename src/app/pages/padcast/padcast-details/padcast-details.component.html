@@ -66,11 +66,171 @@
   </div>
 </header>
 <main>
-  <section class="podcast-card-parent px-5">
-    @for (item of number; track $index) {
-    <app-padcast-item></app-padcast-item>
-    }
-  </section>
+  <div class="container">
+    <div class="d-flex flex-column">
+      <app-filter-bar class="mt-2"></app-filter-bar>
+    </div>
+
+    <div class="box-image mt-4">
+      <div class="row">
+        <div class="col-6 p-3">
+          <div class="podcast-card">
+            <img
+              src="../../../assets/image/padcast/Rectangle2.png"
+              alt=""
+              class="podcast-card-child"
+            />
+            <div class="podcast-card-item"></div>
+          </div>
+          <div
+            class="border-bottom-gray d-flex justify-content-between mt-3 pb-3"
+          >
+            <div class="frame-group">
+              <div class="eye-parent">
+                <i class="fa-solid fa-download f-16"></i>
+              </div>
+              <div class="eye-parent">
+                <i class="fa-solid fa-share-nodes f-16"></i>
+              </div>
+              <div class="eye-parent">
+                <i class="fa-regular fa-eye f-16"></i>
+
+                <div class="name-podcast">832</div>
+              </div>
+              <div class="eye-parent">
+                <i class="fa-solid fa-heart f-16"></i>
+
+                <div class="name-podcast">132</div>
+              </div>
+            </div>
+            <div class="frame-group">
+              <div class="eye-parent">
+                <div class="name-podcast">2022-01-27</div>
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border-bottom-gray d-flex justify-content-between mt-3 overflow-auto pb-3 w-100"
+          >
+            <div class="d-flex flex-column">
+              <h6 class="color-gray font-primary text-end">تیم اجرا</h6>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                  <img src="/assets/image/padcast/item.png" alt="" />
+                  <strong class="f-13">مرضیه مالکی</strong>
+                  <span class="color-gray f-13 mt-2 text-end">گوینده</span>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/image/padcast/item.png" alt="" />
+                  <strong class="f-13">مرضیه مالکی</strong>
+                  <span class="color-gray f-13 mt-2 text-end">گوینده</span>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/image/padcast/item.png" alt="" />
+                  <strong class="f-13">مرضیه مالکی</strong>
+                  <span class="color-gray f-13 mt-2 text-end">گوینده</span>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/image/padcast/item.png" alt="" />
+                  <strong class="f-13">مرضیه مالکی</strong>
+                  <span class="color-gray f-13 mt-2 text-end">گوینده</span>
+                </div>
+                <div class="d-flex flex-column">
+                  <img src="/assets/image/padcast/item.png" alt="" />
+                  <strong class="f-13">مرضیه مالکی</strong>
+                  <span class="color-gray f-13 mt-2 text-end">گوینده</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 p-5">
+          <h2 class="font-primary text-end">فصل ششم- پیش‌گفتار</h2>
+          <div class="color-gray f-16 mt-3 text-end">توضیحات</div>
+          <p class="f-14 font-primary mt-4 text-end">
+            توضیحات این اولین اپیزود و به نوعی معرفی کوتاهی از مجموعه پادکستهای
+            پپ هست. پپ مکالمات روزمره و کاربردی زبان انگلیسی رو از دل بهترین
+            منابع آموزشی مارکت زبان جمع آوری کرده و همراه با توضیح نکات مهمشون
+            به زبان فارسی، برات آماده شنیدن کرده تا در هر زمان و هر مکانی فرصت
+            یادگیری و یا مرور آموخته هات رو داشته باشی. با پـــــــپ، تجربه دو
+            دهه تدریس مکالمه با توست.
+          </p>
+          <ngx-player></ngx-player>
+          <div class="d-flex flex-column mt-3">
+            <!-- <h6 class="color-gray font-primary text-end">دیدگاه کاربران</h6> -->
+            <ki-form-group [label]="'دیدگاه کاربران'">
+              <ki-textarea
+                name="comment"
+                [fullWidth]="true"
+                [placeholder]="'دیدگاه خود را وارد کنید..'"
+              ></ki-textarea>
+            </ki-form-group>
+            <div class="d-flex justify-content-end">
+              <ki-button [size]="'medium'" [title]="'ارسال'"></ki-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-image mt-4 p-5">
+      <div class="d-flex flex-column">
+        <h6 class="color-gray f-14 font-primary mb-3 text-end">
+          دیدگاه های بیشتر
+        </h6>
+        <div class="comment p-2 w-100 color-white d-flex mb-2">
+          <div class="p-3 border-left-gray">
+            <div class="d-flex flex-column">
+              <img src="/assets/image/padcast/item.png" alt="" />
+              <strong class="f-13">مرضیه مالکی</strong>
+            </div>
+          </div>
+          <p class="align-content-center font-primary me-2">
+            توی این اپیزود با شهریار و تیم پادکست ایلتس دیلی یک سفر فضایی رو
+            تجربه میکنین !
+          </p>
+        </div>
+        <div class="comment p-2 w-100 color-white d-flex mb-2">
+          <div class="p-3 border-left-gray">
+            <div class="d-flex flex-column">
+              <img src="/assets/image/padcast/item.png" alt="" />
+              <strong class="f-13">مرضیه مالکی</strong>
+            </div>
+          </div>
+          <p class="align-content-center font-primary me-2">
+            توی این اپیزود با شهریار و تیم پادکست ایلتس دیلی یک سفر فضایی رو
+            تجربه میکنین !
+          </p>
+        </div>
+        <div class="comment p-2 w-100 color-white d-flex mb-2">
+          <div class="p-3 border-left-gray">
+            <div class="d-flex flex-column">
+              <img src="/assets/image/padcast/item.png" alt="" />
+              <strong class="f-13">مرضیه مالکی</strong>
+            </div>
+          </div>
+          <p class="align-content-center font-primary me-2">
+            توی این اپیزود با شهریار و تیم پادکست ایلتس دیلی یک سفر فضایی رو
+            تجربه میکنین !
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white w-100">
+    <div class="container">
+      <div class="mt-5 position-relative mb-5">
+        <h6 class="font-primary p-3 pb-3 text-centerfont-family-javan text-end">
+          اپیزود‌های دیگر
+        </h6>
+        <app-swiper [dynamicTemplate]="dynamicTemplate"></app-swiper>
+        <ng-template #dynamicTemplate let-data="data">
+          <app-padcast-item></app-padcast-item>
+        </ng-template>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
 </main>
 <footer class="position-relative mt-2">
   <div class="w-100">

@@ -5,30 +5,32 @@ $name: "textarea";
 .#{$name} {
   display: flex;
   &__element {
-    background-color: $form-element-background-color;
-    color: $form-element-color;
-    border: 1px solid $form-element-border-color;
-    box-shadow: $form-element-shadow;
-    font-size: $form-element-font-size--normal;
-    font-family: nb-theme(font-family-primary);
-    height: $form-element-size--normal * 3;
-    line-height: 1.5;
-    border-radius: $form-element-border-radius--normal;
-    padding: $spacing-x2 $spacing-x3;
-    width: 100%;
+    background-color: $form-element-background-color !important;
+    color: $form-element-color !important;
+    border: 1px solid $form-element-border-color !important;
+    box-shadow: $form-element-shadow !important;
+    font-size: $form-element-font-size--normal !important;
+    font-family: nb-theme(font-family-primary) !important;
+    height: $form-element-size--normal * 3 !important;
+    line-height: 1.5 !important;
+    border-radius: $form-element-border-radius--normal !important;
+    padding: $spacing-x2 $spacing-x3 !important;
+    width: 100% !important;
     outline: none;
     resize: none;
     transition: 0.3s all;
 
     &::placeholder {
+      font-family: nb-theme(font-family-primary) !important;
       color: $content-tertiary !important;
+      font-size: 12px !important;
     }
 
     &:focus {
-      background-color: $form-element-background-color--focus;
-      color: $form-element-color--focus;
-      border-color: $form-element-border-color--focus;
-      box-shadow: $form-element-shadow--focus;
+      background-color: $form-element-background-color--focus !important;
+      color: $form-element-color--focus !important;
+      border-color: $form-element-border-color--focus !important;
+      box-shadow: $form-element-shadow--focus !important;
     }
 
     &:read-only {

@@ -31,7 +31,7 @@ export class CustomHeaderComponent implements OnInit {
     { title: 'placement', link: 'placement' },
     { title: 'questions', link: 'questions' },
     { title: 'registration', link: 'registration' },
-    { title: 'padcast', link: 'padcast' },
+    { title: 'padcast', link: 'padcast/list' },
   ];
   themes = ['dark', 'default', 'cosmic', 'corporate', 'kid-theme'];
   //   private authService: NbAuthService,

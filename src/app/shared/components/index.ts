@@ -5,3 +5,4 @@ export * from './swiper/swiper.component';
 export * from './info-box-class/info-box-class.component';
 export * from './item-news/item-news.component';
 export * from './padcast-item/padcast-item.component';
+export * from './player/player.component';

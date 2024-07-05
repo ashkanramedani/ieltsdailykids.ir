@@ -35,6 +35,7 @@ import {
   RegistrationComponent,
   padcastComponent,
   padcastDetailsComponent,
+  LayoutPadcastComponent,
 } from './pages';
 
 @NgModule({
@@ -54,6 +55,7 @@ import {
     PlacementComponent,
     FrequentlyQuestionsComponent,
     LayoutComponent,
+    LayoutPadcastComponent,
     HomeComponent,
     RegistrationComponent,
     padcastDetailsComponent,

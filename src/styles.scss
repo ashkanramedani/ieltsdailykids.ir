@@ -17,10 +17,15 @@
 @import "app.scss"; /* You can add global styles to this file, and also import other style files */
 :root {
   --bg-btn: #019da4;
-  --wheat:#fff
+  --wheat: #fff;
 }
-
-.bg-btn{
+.border-bottom-gray {
+  border-bottom: 1px solid #d9d9d9;
+}
+.border-left-gray {
+  border-left: 1px solid #d9d9d9;
+}
+.bg-btn {
   background-color: var(--bg-btn);
   color: var(--wheat);
 }

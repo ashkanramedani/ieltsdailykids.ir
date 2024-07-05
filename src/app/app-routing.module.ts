@@ -8,6 +8,7 @@ import {
   FrenchComponent,
   FrequentlyQuestionsComponent,
   LayoutComponent,
+  LayoutPadcastComponent,
   LibraryComponent,
   PlacementComponent,
   ProductsComponent,
@@ -15,6 +16,7 @@ import {
   RegistrationComponent,
   WorkShopComponent,
   padcastComponent,
+  padcastDetailsComponent,
 } from './pages';
 import { HomeComponent } from './pages/home/home.component';
 
@@ -29,7 +31,20 @@ const routes: Routes = [
   { component: ClassPageComponent, path: 'class' },
   { component: PlacementComponent, path: 'placement' },
   { component: FrequentlyQuestionsComponent, path: 'questions' },
-  { component: padcastComponent, path: 'padcast' },
+  {
+    component: LayoutPadcastComponent,
+    path: 'padcast',
+    children: [
+      {
+        path: 'list',
+        component: padcastComponent,
+      },
+      {
+        component: padcastDetailsComponent,
+        path: 'detail/:id',
+      },
+    ],
+  },
   { component: RegistrationComponent, path: 'registration' },
   {
     component: LayoutComponent,

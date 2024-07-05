@@ -14,3 +14,4 @@ export * from './home/home.component';
 export * from './registration/registration.component';
 export * from './padcast/padcast.component';
 export * from './padcast/padcast-details/padcast-details.component';
+export * from './padcast/layout/layout.component';

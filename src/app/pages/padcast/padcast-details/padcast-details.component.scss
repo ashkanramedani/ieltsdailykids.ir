@@ -12,7 +12,6 @@ main {
   text-align: right;
 }
 h6 {
-  font-size: 1.25rem;
   font-weight: 700;
   color: #19313a;
   line-height: 41px;
@@ -33,9 +32,6 @@ h6 {
     text-align: justify;
     color: white;
   }
-}
-main {
-  direction: ltr;
 }
 
 .union-icon {
@@ -118,6 +114,76 @@ main {
 }
 ///
 ///
+.podcast-card-child {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.podcast-card:hover .podcast-card-item {
+  display: block;
+}
+.frame-group,
+.frame-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.frame-group {
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  .eye-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    .name-podcast {
+      position: relative;
+    }
+  }
+}
+.fa-heart {
+  color: #ff002e;
+}
+.podcast-card {
+  cursor: pointer;
+  width: 28rem;
+  position: relative;
+  box-shadow: 0 4px 25px rgba(114, 146, 207, 0.5);
+  border-radius: var(--br-31xl);
+  height: 28rem;
+}
+.podcast-card-item {
+  width: 100%;
+  display: none;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  border-radius: var(--br-31xl);
+}
+.box-image {
+  border-radius: var(--br-31xl);
+  background-color: #f6f9fb;
+  box-shadow: 0 4px 25px rgba(114, 146, 207, 0.5);
+  mix-blend-mode: multiply;
+  position: relative;
+  width: 100%;
+  height: auto;
+  p {
+    line-height: 30px;
+  }
+}
+.comment {
+  background-color: white;
+  height: 9rem;
+  border-radius: 9px;
+  p {
+    font-size: 13px;
+  }
+}
 
 .podcast-card-parent {
   gap: var(--gap-5xl);

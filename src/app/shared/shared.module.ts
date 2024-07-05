@@ -39,6 +39,7 @@ import {
   ItemNewsComponent,
   PadcastItemComponent,
   PinCodeComponent,
+  PlayerComponent,
 } from './components';
 import { HighLightPipe } from './pipes/highlight.pipe';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
@@ -48,6 +49,8 @@ import { BoxImgPlyComponent } from './components/box-img-ply/box-img-ply.compone
 import { ItemShopComponent } from './components/item-shop/item-shop.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { HeaderHomeComponent } from './components/header-home/header-home.component';
+import { TimingPipe } from './pipes/timing.pipe';
+import { PlayerService } from './services/player.service';
 // import * as _templates from './components/templates';
 // import * as _organisms from './components/organisms';
 
@@ -63,6 +66,7 @@ const component = [
   HeaderHomeComponent,
   ItemNewsComponent,
   PadcastItemComponent,
+  PlayerComponent,
   kiComponent.KiButtonComponent,
   kiComponent.KiCheckboxComponent,
   kiComponent.KiConfirmationComponent,
@@ -80,6 +84,7 @@ const component = [
   kiComponent.KiValidationComponent,
   kiComponent.KiTextareaComponent,
   HighLightPipe,
+  TimingPipe,
 ];
 @NgModule({
   declarations: [component],
@@ -114,7 +119,7 @@ const component = [
     NbMenuModule.forRoot(),
   ],
 
-  providers: [],
+  providers: [PlayerService],
   exports: [
     ...component,
     ReactiveFormsModule,
